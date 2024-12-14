@@ -1,4 +1,4 @@
-[gd_scene load_steps=30 format=3 uid="uid://cc45xmw4y86ig"]
+[gd_scene load_steps=43 format=3 uid="uid://cc45xmw4y86ig"]
 
 [ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="1_c3igu"]
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="1_vwx7u"]
@@ -12,7 +12,14 @@
 [ext_resource type="PackedScene" uid="uid://3eqjaqrr6y6f" path="res://assets/bunk_bed/A_cozy_compact_bunk__1214043555_texture.glb" id="8_q85nl"]
 [ext_resource type="PackedScene" uid="uid://bjgmyoufqwj6u" path="res://assets/Belt/a_simple_conveyor_bel_1214071048_texture.glb" id="9_rou26"]
 [ext_resource type="PackedScene" uid="uid://cexi6qp7mptj0" path="res://assets/Window/Window_frame_without__1214005034_texture.glb" id="10_bvjbp"]
+[ext_resource type="PackedScene" uid="uid://baet1067pyaq" path="res://assets/Chair/A_Dungeons_Dragons__1214020752.glb" id="11_d0uum"]
 [ext_resource type="PackedScene" uid="uid://c6b1kr11updrx" path="res://assets/Table/WoodenTable_01_1k.gltf" id="12_23ad8"]
+[ext_resource type="PackedScene" uid="uid://c6o12xwhgjg4n" path="res://assets/Tools/Hammer/wooden_hammer_01_1k.gltf" id="13_khxh3"]
+[ext_resource type="PackedScene" uid="uid://04qmy3v21nbx" path="res://assets/Tools/Hand_Drill/vintage_hand_drill_1k.gltf" id="14_np4nb"]
+[ext_resource type="PackedScene" uid="uid://db7pl7cujbhgg" path="res://assets/Tools/screwdiver/flathead_screwdriver_1k.gltf" id="15_5jjep"]
+[ext_resource type="PackedScene" uid="uid://chlc5l1c2xv8" path="res://assets/Door/a_realistic_door_1214090923.glb" id="16_23vnr"]
+[ext_resource type="PackedScene" uid="uid://cchloxstnn1x5" path="res://assets/Tools/Present/Single_Christmas_pres_1214083342_texture.glb" id="19_n42mh"]
+[ext_resource type="PackedScene" uid="uid://cc5wn6hurdtw6" path="res://assets/Hat/Christmas_Santa_s_Hat_1214091135.glb" id="20_oa1ds"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -68,6 +75,24 @@ size = Vector3(0.87207, 1.06555, 1)
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5ye8q"]
 size = Vector3(1, 1, 1.99615)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_05dgn"]
+size = Vector3(1.85101, 1.20703, 0.7854)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jgx12"]
+size = Vector3(1.43567, 1.97406, 1.23578)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_26ruh"]
+size = Vector3(1.43109, 2.02591, 1.31665)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_geiu5"]
+size = Vector3(1.49854, 1.95898, 1.35498)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_u6mni"]
+size = Vector3(1.36133, 1.94812, 1.03613)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_kkvn5"]
+size = Vector3(1.68481, 1, 0.785202)
 
 [node name="Main" type="Node3D"]
 
@@ -279,32 +304,221 @@ shape = SubResource("BoxShape3D_d8kdg")
 
 [node name="Workshop" type="Node3D" parent="Assets"]
 
-[node name="Belt" parent="Assets/Workshop" instance=ExtResource("9_rou26")]
+[node name="Belts" type="Node3D" parent="Assets/Workshop"]
+
+[node name="Belt" parent="Assets/Workshop/Belts" instance=ExtResource("9_rou26")]
 transform = Transform3D(1, 0, 0, 2.46519e-31, 1, 0, 0, 0, 1, 3.04905, 1.22079, 1.60819)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belt"]
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belts/Belt"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belt/RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belts/Belt/RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0264587)
 shape = SubResource("BoxShape3D_5ye8q")
 
-[node name="Belt2" parent="Assets/Workshop" instance=ExtResource("9_rou26")]
+[node name="Belt2" parent="Assets/Workshop/Belts" instance=ExtResource("9_rou26")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.04905, 1.22079, -0.388883)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belt2"]
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belts/Belt2"]
 
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belt2/RigidBody3D"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belts/Belt2/RigidBody3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0264587)
 shape = SubResource("BoxShape3D_5ye8q")
 
-[node name="Christmas_present_pil_1213234534_texture" parent="Assets" instance=ExtResource("6_frfev")]
-transform = Transform3D(1.99805, -0.000609593, 0.0883431, 0.0005176, 2, 0.0020944, -0.0883437, -0.0020695, 1.99805, 4.91516, 1.85692, -13.2432)
+[node name="Belt3" parent="Assets/Workshop/Belts" instance=ExtResource("9_rou26")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.624601, 1.22079, -2.26059)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belts/Belt3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belts/Belt3/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0264587)
+shape = SubResource("BoxShape3D_5ye8q")
+
+[node name="Belt4" parent="Assets/Workshop/Belts" instance=ExtResource("9_rou26")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.624601, 1.22079, -4.25792)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belts/Belt4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belts/Belt4/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0264587)
+shape = SubResource("BoxShape3D_5ye8q")
+
+[node name="Belt5" parent="Assets/Workshop/Belts" instance=ExtResource("9_rou26")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.624601, 1.22079, -8.16693)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belts/Belt5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belts/Belt5/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0264587)
+shape = SubResource("BoxShape3D_5ye8q")
+
+[node name="Belt6" parent="Assets/Workshop/Belts" instance=ExtResource("9_rou26")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -1.1432, 1.22079, -9.64533)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Belts/Belt6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Belts/Belt6/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.0264587)
+shape = SubResource("BoxShape3D_5ye8q")
+
+[node name="Table4" type="Node3D" parent="Assets/Workshop"]
+
+[node name="Tables" type="Node3D" parent="Assets/Workshop"]
+
+[node name="Table" parent="Assets/Workshop/Tables" instance=ExtResource("12_23ad8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Tables/Table"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Tables/Table/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052948, 0.103516, 0.0720215)
+shape = SubResource("BoxShape3D_05dgn")
+
+[node name="Table2" parent="Assets/Workshop/Tables" instance=ExtResource("12_23ad8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.760285, 1, -1.69908)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Tables/Table2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Tables/Table2/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052948, 0.103516, 0.0352783)
+shape = SubResource("BoxShape3D_05dgn")
+
+[node name="Table3" parent="Assets/Workshop/Tables" instance=ExtResource("12_23ad8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.596108, 1, -6.16667)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Tables/Table3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Tables/Table3/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052948, 0.103516, 0)
+shape = SubResource("BoxShape3D_05dgn")
+
+[node name="Table4" parent="Assets/Workshop/Tables" instance=ExtResource("12_23ad8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.12903, 1, 1.08682)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Tables/Table4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Tables/Table4/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052948, 0.103516, 0)
+shape = SubResource("BoxShape3D_05dgn")
+
+[node name="Table5" parent="Assets/Workshop/Tables" instance=ExtResource("12_23ad8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.12903, 1, -0.748042)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Tables/Table5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Tables/Table5/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052948, 0.103516, 0)
+shape = SubResource("BoxShape3D_05dgn")
+
+[node name="Table6" parent="Assets/Workshop/Tables" instance=ExtResource("12_23ad8")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 6.12903, 1, -8.87111)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Tables/Table6"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Tables/Table6/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.052948, 0.103516, 0)
+shape = SubResource("BoxShape3D_05dgn")
+
+[node name="Chairs" type="Node3D" parent="Assets/Workshop"]
+
+[node name="Chair" parent="Assets/Workshop/Chairs" instance=ExtResource("11_d0uum")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 2.57296, 1.50014, -2.78049)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Chairs/Chair"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Chairs/Chair/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0010376, 0.00601196, -0.00271606)
+shape = SubResource("BoxShape3D_jgx12")
+
+[node name="Chair4" parent="Assets/Workshop/Chairs" instance=ExtResource("11_d0uum")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 5.96651, 1.50014, -4.34416)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Chairs/Chair4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Chairs/Chair4/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0010376, 0.00601196, -0.00271606)
+shape = SubResource("BoxShape3D_jgx12")
+
+[node name="Chair2" parent="Assets/Workshop/Chairs" instance=ExtResource("11_d0uum")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 0.857926, 1.50014, -2.78049)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Chairs/Chair2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Chairs/Chair2/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0196838, 0.0271454, -0.0098877)
+shape = SubResource("BoxShape3D_26ruh")
+
+[node name="Chair3" parent="Assets/Workshop/Chairs" instance=ExtResource("11_d0uum")]
+transform = Transform3D(-2.18557e-08, 0, 0.5, 0, 0.5, 0, -0.5, 0, -2.18557e-08, 0.580367, 1.50014, -6.15117)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Chairs/Chair3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Chairs/Chair3/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.00610352, -0.0195312, 0.0534668)
+shape = SubResource("BoxShape3D_geiu5")
+
+[node name="Tools" type="Node3D" parent="Assets/Workshop"]
+
+[node name="Hammer" parent="Assets/Workshop/Tools" instance=ExtResource("10_bvjbp")]
+transform = Transform3D(1, 0, 2.98023e-08, -5.82077e-11, 1, 0, 0, -1.16415e-10, 1, 12.781, 3.6096, -13.8338)
+
+[node name="Hammer2" parent="Assets/Workshop/Tools" instance=ExtResource("13_khxh3")]
+transform = Transform3D(1, 2.98023e-08, -5.82077e-11, -5.82077e-11, -4.36557e-08, -1, 0, 1, -4.35393e-08, 2.977, 1.53906, -1.642)
+
+[node name="Hammer3" parent="Assets/Workshop/Tools" instance=ExtResource("13_khxh3")]
+transform = Transform3D(1, 2.98023e-08, -5.82077e-11, -5.82077e-11, -4.36557e-08, -1, 0, 1, -4.35393e-08, 2.977, 1.53906, -1.642)
+
+[node name="Hammer4" parent="Assets/Workshop/Tools" instance=ExtResource("13_khxh3")]
+transform = Transform3D(1, 2.98023e-08, -5.82077e-11, -5.82077e-11, -4.36557e-08, -1, 0, 1, -4.35393e-08, 2.90226, 1.5675, -1.64315)
+
+[node name="Hammer5" parent="Assets/Workshop/Tools" instance=ExtResource("13_khxh3")]
+transform = Transform3D(0.48264, -0.875818, 3.82424e-08, 0, -4.36557e-08, -1, 0.875819, 0.482641, -2.09548e-08, -0.483104, 1.5675, -6.74822)
+
+[node name="Hand_drill" parent="Assets/Workshop/Tools" instance=ExtResource("14_np4nb")]
+transform = Transform3D(-4.37114e-08, 1, 0, 4.37114e-08, 1.91069e-15, 1, 1, 4.37114e-08, -4.37114e-08, 0.593303, 1.57115, -1.61822)
+
+[node name="Hand_drill2" parent="Assets/Workshop/Tools" instance=ExtResource("14_np4nb")]
+transform = Transform3D(-4.37114e-08, 1, 0, 4.37114e-08, 1.91069e-15, 1, 1, 4.37114e-08, -4.37114e-08, 6.06684, 1.59046, -9.62429)
+
+[node name="Screwdriver" parent="Assets/Workshop/Tools" instance=ExtResource("15_5jjep")]
+transform = Transform3D(0.0197035, 0.999806, 0, -0.999806, 0.0197035, 0, 0, 0, 1, 6.03465, 1.5642, -1.49199)
+
+[node name="Screwdriver2" parent="Assets/Workshop/Tools" instance=ExtResource("15_5jjep")]
+transform = Transform3D(-0.0255256, 0.0327232, 0.999138, -0.999581, 0.0128041, -0.0259563, -0.0136424, -0.999382, 0.0323826, 1.92744, 1.5642, -1.61515)
+
+[node name="Door" parent="Assets/Workshop" instance=ExtResource("16_23vnr")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 7.47716, 3.02851, 6.3755)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Workshop/Door"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Workshop/Door/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.180664, -0.0360718, 0.0180664)
+shape = SubResource("BoxShape3D_u6mni")
 
 [node name="Japanese_tin_toy_robo_1214004600_refine" parent="Assets" instance=ExtResource("5_kkdjv")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48701, 2.00423, -13.5385)
 
-[node name="WoodenTable_01_1k" parent="Assets" instance=ExtResource("12_23ad8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
+[node name="Presents" type="Node3D" parent="Assets"]
 
-[node name="Window_frame_without__1214005034_texture" parent="." instance=ExtResource("10_bvjbp")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 12.781, 3.6096, -13.8338)
+[node name="Presentss" parent="Assets/Presents" instance=ExtResource("6_frfev")]
+transform = Transform3D(1.99805, -0.000609593, 0.0883431, 0.0005176, 2, 0.0020944, -0.0883437, -0.0020695, 1.99805, 4.91516, 1.85692, -13.2432)
+
+[node name="Presentss2" parent="Assets/Presents" instance=ExtResource("6_frfev")]
+transform = Transform3D(-2.07135, -0.00129378, 0.741283, 3.05311e-17, 2.2, 0.00383972, -0.741284, 0.00361519, -2.07135, 4.61651, 1.85692, 3.92766)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/Presents/Presentss2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/Presents/Presentss2/RigidBody3D"]
+transform = Transform3D(0.97597, 0.000109164, -0.217905, -0.000107286, 1, 2.04333e-05, 0.217905, 3.41737e-06, 0.975971, -0.102103, 1.52588e-05, -0.122867)
+shape = SubResource("BoxShape3D_kkvn5")
+
+[node name="Presents" parent="Assets/Presents" instance=ExtResource("19_n42mh")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 6.19147, 1.79622, -8.31771)
+
+[node name="Presents3" parent="Assets/Presents" instance=ExtResource("19_n42mh")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.57901, 1.79622, -5.69524)
+
+[node name="Presents2" parent="Assets/Presents" instance=ExtResource("19_n42mh")]
+transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 6.18991, 1.81418, 1.64552)
+
+[node name="Christmas_Santa_s_Hat_1214091135" parent="Assets" instance=ExtResource("20_oa1ds")]
+transform = Transform3D(-0.104241, 0, -0.227231, 0, 0.25, 0, 0.227231, 0, -0.104241, 7.34599, 3.96445, 6.41169)
