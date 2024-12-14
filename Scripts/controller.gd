@@ -61,12 +61,11 @@ func _physics_process(delta: float) -> void:
 		speed = RUN_SPEED
 	if Input.is_action_just_released("run"):
 		speed = NORMAL_SPEED
-
-	update_crouch(delta)
-	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI awawda  a wtions with custom gameplay actions.
 	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
+
+	# Get the input direction and handle the movement/deceleration.
+	# As good practice, you should replace UI awawda  a wtions with custom gameplay actions.
 	
 	if direction != Vector3.ZERO:
 		velocity.x = direction.x * speed
@@ -77,6 +76,7 @@ func _physics_process(delta: float) -> void:
 		
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
+	update_crouch(delta)
 	move_and_slide()
 
 func _input(event):
@@ -86,9 +86,9 @@ func _input(event):
 		rotation_x = clamp(rotation_x, -VERTICAL_LIMIT, VERTICAL_LIMIT)
 		$Node3D/Camera3D.rotation_degrees.x = rotation_x
 	if Input.is_action_just_pressed("crouch"):
-		toggle_crouch()
+		crouch()
 	if Input.is_action_just_released("crouch"):
-		toggle_crouch()
+		release_crouch()
 
 #	if Input.is_action_just_pressed("grab"):
 #		if grabbed_object:
@@ -127,28 +127,17 @@ func _input(event):
 #		var throw_vector = camera.global_transform.basis.z * THROW_FORCE
 #		grabbed_object.apply_impulse(Vector3.ZERO, throw_vector)
 
-# CROUCH FUNCTIONS
-
+# CROUCH FUNCTIONSw
 func crouch():
-	is_crouching = !is_crouching
-	var capsule = $CollisionShape3D.shape
-
-	if is_crouching:
-		capsule.height = CROUCH_HEIGH
-		capsule.radius *= 0.5
-	else:
-		capsule.height = original_heigh
-		capsule.radius /= 0.5
-
-
-func toggle_crouch():
-	is_crouching = !is_crouching
-	target_height = CROUCH_HEIGH if is_crouching else NORMAL_HEIGH
+	is_crouching = true
+	target_height = CROUCH_HEIGH
+	
+func release_crouch():
+	is_crouching = false;
+	target_height = NORMAL_HEIGH
 
 func update_crouch(delta: float):
 	var capsule = $CollisionShape3D.shape
 	# Smoothly interpolate the height of the collision shape
 	capsule.height = lerp(capsule.height, target_height, CROUCH_TRANSITION_SPEED * delta)
-
-	# Optionally adjust the radius proportionally
 	capsule.radius = lerp(capsule.radius, original_radius * (CROUCH_HEIGH if is_crouching else NORMAL_HEIGH), CROUCH_TRANSITION_SPEED * delta)
