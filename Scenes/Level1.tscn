@@ -5,8 +5,8 @@
 [ext_resource type="Texture2D" uid="uid://chr7bdkqhh84x" path="res://assets/textures/wall.png" id="3_diuyy"]
 [ext_resource type="Script" path="res://player.gd" id="4_db7ur"]
 [ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="5_hsnub"]
-[ext_resource type="PackedScene" uid="uid://25ctru133em6" path="res://assets/Japanese_tin_toy_robo_1214004600_refine.glb" id="5_kkdjv"]
-[ext_resource type="PackedScene" uid="uid://cbf7rh53yh1ax" path="res://assets/Christmas_present_pil_1213234534_texture.glb" id="6_frfev"]
+[ext_resource type="PackedScene" uid="uid://25ctru133em6" path="res://assets/decor_robot_toy/Japanese_tin_toy_robo_1214004600_refine.glb" id="5_kkdjv"]
+[ext_resource type="PackedScene" uid="uid://cbf7rh53yh1ax" path="res://assets/Present_pile/Christmas_present_pil_1213234534_texture.glb" id="6_frfev"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
