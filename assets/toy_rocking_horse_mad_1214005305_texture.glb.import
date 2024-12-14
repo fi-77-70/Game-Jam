@@ -3,7 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://g7oonmdjnkhs"
+uid="uid://bmbwt5beanxry"
 path="res://.godot/imported/toy_rocking_horse_mad_1214005305_texture.glb-df8d18c35e2b8b6d75e14070556b6845.scn"
 
 [deps]
@@ -32,5 +32,5 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=0
 gltf/embedded_image_handling=1
