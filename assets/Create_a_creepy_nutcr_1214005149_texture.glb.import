@@ -3,7 +3,11 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
+<<<<<<< HEAD
+uid="uid://ct3fyh8nrm82"
+=======
 uid="uid://b5ponnt4jd0oh"
+>>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
 path="res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture.glb-4de91865ec203c6d39c4f757e9fa2333.scn"
 
 [deps]
