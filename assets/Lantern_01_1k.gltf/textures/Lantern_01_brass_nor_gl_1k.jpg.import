@@ -2,20 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://08nvav1abo1t"
-path.s3tc="res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-e7728b0eae8a506c837cdd13d82a447d.s3tc.ctex"
+uid="uid://cb7e3ejhmdl2e"
+path.s3tc="res://.godot/imported/Lantern_01_brass_nor_gl_1k.jpg-1fff75f241d1f4a02e209bfc8c7fdd8a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-generator_parameters={
-"md5": "b00cf891f3d61794c5e47f11821d7d89"
-}
 
 [deps]
 
-source_file="res://assets/Santa/biped/Animation_Skill_01_withSkin_texture_0.png"
-dest_files=["res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-e7728b0eae8a506c837cdd13d82a447d.s3tc.ctex"]
+source_file="res://assets/Lantern_01_1k.gltf/textures/Lantern_01_brass_nor_gl_1k.jpg"
+dest_files=["res://.godot/imported/Lantern_01_brass_nor_gl_1k.jpg-1fff75f241d1f4a02e209bfc8c7fdd8a.s3tc.ctex"]
 
 [params]
 
@@ -23,12 +20,12 @@ compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
-compress/normal_map=0
+compress/normal_map=1
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=0
-roughness/src_normal=""
+roughness/mode=1
+roughness/src_normal="res://assets/Lantern_01_1k.gltf/textures/Lantern_01_brass_nor_gl_1k.jpg"
 process/fix_alpha_border=true
 process/premult_alpha=false
 process/normal_map_invert_y=false

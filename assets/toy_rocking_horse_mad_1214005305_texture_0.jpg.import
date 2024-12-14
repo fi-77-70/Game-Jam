@@ -2,45 +2,26 @@
 
 importer="texture"
 type="CompressedTexture2D"
-<<<<<<< HEAD
-uid="uid://b7esoahce1xhi"
+uid="uid://cdxvnawgj2elh"
 path="res://.godot/imported/toy_rocking_horse_mad_1214005305_texture_0.jpg-ebb2cbfe7482e564359041b3692a99ab.ctex"
 metadata={
 "vram_texture": false
-=======
-uid="uid://n7p4wh3x55dq"
-path.s3tc="res://.godot/imported/toy_rocking_horse_mad_1214005305_texture_0.jpg-ebb2cbfe7482e564359041b3692a99ab.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
->>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
-}
-generator_parameters={
-"md5": "fba2080aecfe1bfe5ee1402ef2f670b3"
 }
 
 [deps]
 
 source_file="res://assets/toy_rocking_horse_mad_1214005305_texture_0.jpg"
-<<<<<<< HEAD
 dest_files=["res://.godot/imported/toy_rocking_horse_mad_1214005305_texture_0.jpg-ebb2cbfe7482e564359041b3692a99ab.ctex"]
 
 [params]
 
 compress/mode=0
-=======
-dest_files=["res://.godot/imported/toy_rocking_horse_mad_1214005305_texture_0.jpg-ebb2cbfe7482e564359041b3692a99ab.s3tc.ctex"]
-
-[params]
-
-compress/mode=2
->>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
-mipmaps/generate=true
+mipmaps/generate=false
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -50,8 +31,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-<<<<<<< HEAD
 detect_3d/compress_to=1
-=======
-detect_3d/compress_to=0
->>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
