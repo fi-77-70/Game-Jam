@@ -4,12 +4,13 @@
 [ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="2_dkcx8"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qqkou"]
-radius = 0.2
-height = 1.0
+radius = 0.1
+height = 0.5
+radial_segments = 30
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1m2al"]
-radius = 0.211859
-height = 1.00743
+radius = 0.184736
+height = 0.509783
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_pd50x")
@@ -19,7 +20,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
 mesh = SubResource("CapsuleMesh_qqkou")
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0654563, 0.498253, -0.00131708)
 shape = SubResource("CapsuleShape3D_1m2al")
 
 [node name="Node3D" type="Node3D" parent="."]
@@ -32,7 +33,9 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0259064, -0.0205638, 0.013
 target_position = Vector3(0, 0, -1)
 
 [node name="Lantern_01_1k" parent="." instance=ExtResource("2_dkcx8")]
-transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.295745, 0.464344, -0.11224)
+transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.252695, 0.464344, -0.11224)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lantern_01_1k"]
-transform = Transform3D(1.3245, 0, 0, 0, 1.3245, 0, 0, 0, 1.3245, -0.0646932, 0.078846, 0.0326009)
+transform = Transform3D(1.3245, 0, 0, 0, 1.3245, 0, 0, 0, 1.3245, -0.0646932, 0.078846, 0.0107795)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Lantern_01_1k"]
