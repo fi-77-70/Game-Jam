@@ -58,11 +58,17 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, SPEED)
 		
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
-
 	move_and_slide()
 
 @onready var heyo = get_node("../Sound/Heyo")
 func _input(event):
+	if Input.is_action_just_pressed("light"):
+		if ($Lantern_01_1k/OmniLight3D.omni_range):
+			$Lantern_01_1k/OmniLight3D.omni_range = 0
+			$Lantern_01_1k.visible = 0
+		else:
+			$Lantern_01_1k.visible = 1
+			$Lantern_01_1k/OmniLight3D.omni_range = 5
 	if Input.is_action_just_pressed("play_heyo"):
 		heyo.play()
 	if event is InputEventMouseMotion:

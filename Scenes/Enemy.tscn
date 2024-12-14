@@ -1,0 +1,21 @@
+[gd_scene load_steps=4 format=3 uid="uid://blcb7mtdv687p"]
+
+[ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_appy3"]
+[ext_resource type="PackedScene" uid="uid://qh1oi5j4s3cs" path="res://assets/CreepyRudolph/biped/Enemy.glb" id="2_de4fi"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5q1p8"]
+
+[node name="Enemy" type="CharacterBody3D" groups=["player"]]
+script = ExtResource("1_appy3")
+
+[node name="Enemy" parent="." instance=ExtResource("2_de4fi")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.44496, 0)
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+shape = SubResource("BoxShape3D_5q1p8")
+
+[node name="OmniLight3D" type="OmniLight3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.916196, 0.33594)
+light_color = Color(0.814269, 0, 0.0516188, 1)

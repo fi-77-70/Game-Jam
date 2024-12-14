@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://c1hqqfejpxq1l"]
 
-[ext_resource type="PackedScene" uid="uid://qh1oi5j4s3cs" path="res://assets/CreepyRudolph/biped/Animation_Walking_withSkin.glb" id="1_j3oa7"]
+[ext_resource type="PackedScene" uid="uid://qh1oi5j4s3cs" path="res://assets/CreepyRudolph/biped/Enemy.glb" id="1_j3oa7"]
 [ext_resource type="Script" path="res://Scenes/animation_player.gd" id="2_mpqo2"]
 [ext_resource type="Script" path="res://Scripts/rudolph.gd" id="2_xgfdl"]
 
