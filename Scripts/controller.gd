@@ -75,6 +75,7 @@ func _physics_process(delta: float) -> void:
 		velocity.z = move_toward(velocity.z, 0, speed)
 		
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
+	
 
 	update_crouch(delta)
 	move_and_slide()
