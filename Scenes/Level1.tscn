@@ -1,13 +1,13 @@
-[gd_scene load_steps=17 format=3 uid="uid://cc45xmw4y86ig"]
+[gd_scene load_steps=24 format=3 uid="uid://cc45xmw4y86ig"]
 
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="1_vwx7u"]
 [ext_resource type="Texture2D" uid="uid://doi5emy16fqjq" path="res://assets/textures/main_wall.png" id="2_bwpce"]
 [ext_resource type="Texture2D" uid="uid://chr7bdkqhh84x" path="res://assets/textures/wall.png" id="3_diuyy"]
+[ext_resource type="Script" path="res://player.gd" id="4_db7ur"]
+[ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="5_hsnub"]
 [ext_resource type="PackedScene" uid="uid://25ctru133em6" path="res://assets/decor_robot_toy/Japanese_tin_toy_robo_1214004600_refine.glb" id="5_kkdjv"]
 [ext_resource type="PackedScene" uid="uid://cbf7rh53yh1ax" path="res://assets/Present_pile/Christmas_present_pil_1213234534_texture.glb" id="6_frfev"]
-[ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="6_vcwp6"]
-[ext_resource type="PackedScene" uid="uid://c1hqqfejpxq1l" path="res://Scenes/rudolph.tscn" id="7_degmw"]
-[ext_resource type="Script" path="res://Scripts/rudolph.gd" id="8_ux8a4"]
+[ext_resource type="PackedScene" uid="uid://3eqjaqrr6y6f" path="res://assets/bunk_bed/A_cozy_compact_bunk__1214043555_texture.glb" id="8_q85nl"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -37,6 +37,29 @@ uv1_scale = Vector3(10, 1, 1)
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_g0vm7"]
 albedo_texture = ExtResource("3_diuyy")
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_syw42"]
+radius = 0.2
+height = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_ssfvj"]
+radius = 0.211859
+height = 1.00743
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_3ybvc"]
+size = Vector3(0.846191, 0.8974, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_jisqe"]
+size = Vector3(0.891357, 1.67285, 1)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_sgm6o"]
+size = Vector3(0.871582, 1.6904, 1.18298)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_c0jev"]
+size = Vector3(0.849121, 1.9733, 1.09082)
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_d8kdg"]
+size = Vector3(0.87207, 1.06555, 1)
 
 [node name="Node3D" type="Node3D"]
 
@@ -121,7 +144,7 @@ mesh = SubResource("BoxMesh_m7tth")
 surface_material_override/0 = SubResource("StandardMaterial3D_g0vm7")
 
 [node name="Wall4" type="StaticBody3D" parent="Wall_FC"]
-transform = Transform3D(1, 0, 0, 0, 4, 0, 0, 0, 10, 10.537, 3.055, -2.97656)
+transform = Transform3D(1, 0, 0, 0, 4, 0, 0, 0, 10, 10.537, 3, -2.977)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Wall_FC/Wall4"]
 shape = SubResource("BoxShape3D_4wvoe")
@@ -161,15 +184,82 @@ shape = SubResource("BoxShape3D_4wvoe")
 mesh = SubResource("BoxMesh_m7tth")
 surface_material_override/0 = SubResource("StandardMaterial3D_g0vm7")
 
-[node name="Japanese_tin_toy_robo_1214004600_refine" parent="." instance=ExtResource("5_kkdjv")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48701, 2.00423, -13.5385)
+[node name="Player" type="CharacterBody3D" parent="."]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 13.4547, 2.07714, -13.5601)
+script = ExtResource("4_db7ur")
 
-[node name="Christmas_present_pil_1213234534_texture" parent="." instance=ExtResource("6_frfev")]
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("CapsuleMesh_syw42")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CapsuleShape3D_ssfvj")
+
+[node name="Node3D" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167214, 0.574818, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0259064, -0.0205638, 0.0130253)
+
+[node name="RayCast3D" type="RayCast3D" parent="Player/Node3D/Camera3D"]
+target_position = Vector3(0, 0, -1)
+
+[node name="Lantern_01_1k" parent="Player" instance=ExtResource("5_hsnub")]
+transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.295745, 0.464344, -0.11224)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Player/Lantern_01_1k"]
+transform = Transform3D(1.3245, 0, 0, 0, 1.3245, 0, 0, 0, 1.3245, -0.0646932, 0.078846, 0.0326009)
+
+[node name="Assets" type="Node3D" parent="."]
+
+[node name="Christmas_present_pil_1213234534_texture" parent="Assets" instance=ExtResource("6_frfev")]
 transform = Transform3D(1.99805, -0.000609593, 0.0883431, 0.0005176, 2, 0.0020944, -0.0883437, -0.0020695, 1.99805, 4.91516, 1.85692, -13.2432)
 
-[node name="Player" parent="." groups=["Player"] instance=ExtResource("6_vcwp6")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.944421, 3.6313)
+[node name="Japanese_tin_toy_robo_1214004600_refine" parent="Assets" instance=ExtResource("5_kkdjv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48701, 2.00423, -13.5385)
 
-[node name="Animation_Walking_withSkin" parent="." instance=ExtResource("7_degmw")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 1.11114, 0)
-script = ExtResource("8_ux8a4")
+[node name="bed1" parent="Assets" instance=ExtResource("8_q85nl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.2999, 1.59764, -13.5072)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/bed1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/bed1/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0769043, -0.0513, 0)
+shape = SubResource("BoxShape3D_3ybvc")
+
+[node name="bed4" parent="Assets" instance=ExtResource("8_q85nl")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 13.2999, 1.59764, -11.4805)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/bed4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/bed4/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.053896, 0.336426, -0.00271797)
+shape = SubResource("BoxShape3D_jisqe")
+
+[node name="bed5" parent="Assets" instance=ExtResource("8_q85nl")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 11.9312, 1.59764, -11.4805)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/bed5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/bed5/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0629206, 0.34268, 0.00831509)
+shape = SubResource("BoxShape3D_sgm6o")
+
+[node name="bed2" parent="Assets" instance=ExtResource("8_q85nl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 11.936, 1.59764, -13.5072)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/bed2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/bed2/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0754395, 0.486649, -0.0454102)
+shape = SubResource("BoxShape3D_c0jev")
+
+[node name="bed3" parent="Assets" instance=ExtResource("8_q85nl")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 10.5768, 1.59764, -13.5072)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Assets/bed3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Assets/bed3/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0639648, 0.0327759, 0)
+shape = SubResource("BoxShape3D_d8kdg")
