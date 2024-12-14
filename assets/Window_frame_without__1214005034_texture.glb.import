@@ -3,7 +3,11 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
+<<<<<<< HEAD
 uid="uid://62qsm6jr5b23"
+=======
+uid="uid://daf0foqu0xj8l"
+>>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
 path="res://.godot/imported/Window_frame_without__1214005034_texture.glb-ae13f28f8925b9d7c38dadd6949604b5.scn"
 
 [deps]

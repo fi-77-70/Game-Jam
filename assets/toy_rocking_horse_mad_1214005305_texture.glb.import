@@ -3,7 +3,11 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
+<<<<<<< HEAD
 uid="uid://bm5qoy6e7sjdd"
+=======
+uid="uid://cwx3uh5jcwp8t"
+>>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
 path="res://.godot/imported/toy_rocking_horse_mad_1214005305_texture.glb-df8d18c35e2b8b6d75e14070556b6845.scn"
 
 [deps]

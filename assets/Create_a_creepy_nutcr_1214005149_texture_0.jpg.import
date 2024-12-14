@@ -2,10 +2,18 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
 uid="uid://0fxl3e13n6jl"
 path="res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture_0.jpg-98e52282e59722049f7e64777caa8b1a.ctex"
 metadata={
 "vram_texture": false
+=======
+uid="uid://c7g1dbkg1gw4y"
+path.s3tc="res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture_0.jpg-98e52282e59722049f7e64777caa8b1a.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+>>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
 }
 generator_parameters={
 "md5": "864b59754c034ef5bcceb5ffbb99106f"
@@ -14,11 +22,19 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/Create_a_creepy_nutcr_1214005149_texture_0.jpg"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture_0.jpg-98e52282e59722049f7e64777caa8b1a.ctex"]
 
 [params]
 
 compress/mode=0
+=======
+dest_files=["res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture_0.jpg-98e52282e59722049f7e64777caa8b1a.s3tc.ctex"]
+
+[params]
+
+compress/mode=2
+>>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
@@ -34,4 +50,8 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
+<<<<<<< HEAD
 detect_3d/compress_to=1
+=======
+detect_3d/compress_to=0
+>>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
