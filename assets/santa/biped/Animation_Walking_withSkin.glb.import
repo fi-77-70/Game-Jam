@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://deub2nphgo2go"
-path="res://.godot/imported/_realistic_oldtime_w_1214004353_refine.glb-dff91bc2241ed18051cc03715379204d.scn"
+uid="uid://b7cnb1gt5qyo2"
+path="res://.godot/imported/Animation_Walking_withSkin.glb-4c2eb60fc26a8c067af963fc3199aabe.scn"
 
 [deps]
 
-source_file="res://_realistic_oldtime_w_1214004353_refine.glb"
-dest_files=["res://.godot/imported/_realistic_oldtime_w_1214004353_refine.glb-dff91bc2241ed18051cc03715379204d.scn"]
+source_file="res://assets/santa/biped/Animation_Walking_withSkin.glb"
+dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-4c2eb60fc26a8c067af963fc3199aabe.scn"]
 
 [params]
 
