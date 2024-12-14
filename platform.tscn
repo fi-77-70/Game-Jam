@@ -1,0 +1,80 @@
+[gd_scene load_steps=12 format=3 uid="uid://dn1xjrw1yneef"]
+
+[ext_resource type="Script" path="res://player.gd" id="1_g7vde"]
+[ext_resource type="PackedScene" uid="uid://bxqi3vverrk8i" path="res://biped/Animation_Gangnam_Groove_withSkin.glb" id="2_6hbfc"]
+[ext_resource type="Script" path="res://biped/animation_gangnam_groove_with_skin.gd" id="3_iaxu3"]
+
+[sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pys2d"]
+sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+ground_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
+
+[sub_resource type="Sky" id="Sky_6ofl5"]
+sky_material = SubResource("ProceduralSkyMaterial_pys2d")
+
+[sub_resource type="Environment" id="Environment_tb1oi"]
+background_mode = 2
+sky = SubResource("Sky_6ofl5")
+tonemap_mode = 2
+glow_enabled = true
+
+[sub_resource type="PlaneMesh" id="PlaneMesh_d5vtm"]
+size = Vector2(40, 40)
+
+[sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_tsek1"]
+data = PackedVector3Array(20, 0, 20, -20, 0, 20, 20, 0, -20, -20, 0, 20, -20, 0, -20, 20, 0, -20)
+
+[sub_resource type="CapsuleMesh" id="CapsuleMesh_t3dhe"]
+radius = 0.2
+height = 1.0
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_gd6n5"]
+radius = 0.211859
+height = 1.00743
+
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_lkrmt"]
+
+[node name="Platform" type="Node3D"]
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+transform = Transform3D(-0.866025, -0.433013, 0.25, 0, 0.5, 0.866025, -0.5, 0.75, -0.433013, 0, 0, 0)
+shadow_enabled = true
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_tb1oi")
+
+[node name="Floor" type="MeshInstance3D" parent="."]
+mesh = SubResource("PlaneMesh_d5vtm")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Floor"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Floor/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_tsek1")
+
+[node name="Player" type="CharacterBody3D" parent="."]
+script = ExtResource("1_g7vde")
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+mesh = SubResource("CapsuleMesh_t3dhe")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.5, 0)
+shape = SubResource("CapsuleShape3D_gd6n5")
+
+[node name="Node3D" type="Node3D" parent="Player"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167214, 0.574818, 0)
+
+[node name="Camera3D" type="Camera3D" parent="Player/Node3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0259064, -0.0205638, 0.0130253)
+
+[node name="RayCast3D" type="RayCast3D" parent="Player/Node3D/Camera3D"]
+target_position = Vector3(0, 0, -1)
+
+[node name="Animation_Gangnam_Groove_withSkin" parent="." instance=ExtResource("2_6hbfc")]
+transform = Transform3D(0.555, 0, 0, 0, 0.555, 0, 0, 0, 0.555, 0.395498, 5.96046e-08, -3.42964)
+script = ExtResource("3_iaxu3")
+
+[node name="RigidBody3D" type="RigidBody3D" parent="Animation_Gangnam_Groove_withSkin"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Animation_Gangnam_Groove_withSkin/RigidBody3D"]
+shape = SubResource("CapsuleShape3D_lkrmt")
