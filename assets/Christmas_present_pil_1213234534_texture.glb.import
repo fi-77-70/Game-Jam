@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cbf7rh53yh1ax"
-path="res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-a6456d31a4958fd7c64c2331287625eb.scn"
+path="res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"
 
 [deps]
 
-source_file="res://Christmas_present_pil_1213234534_texture.glb"
-dest_files=["res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-a6456d31a4958fd7c64c2331287625eb.scn"]
+source_file="res://assets/Christmas_present_pil_1213234534_texture.glb"
+dest_files=["res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"]
 
 [params]
 
