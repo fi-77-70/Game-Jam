@@ -3,11 +3,7 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-<<<<<<< HEAD
-uid="uid://cq7c7pbwnx4nm"
-=======
-uid="uid://bm5lh453y23rc"
->>>>>>> ddf599c3430fa61241d95a652b6543af0d55fcc7
+uid="uid://bgoohnro71xj"
 path="res://.godot/imported/Animation_Running_withSkin.glb-f0b716f6639c0dac0b4b9d747f63592e.scn"
 
 [deps]
@@ -36,5 +32,5 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=0
 gltf/embedded_image_handling=1

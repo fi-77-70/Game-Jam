@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dwc1u84scchux"
-path="res://.godot/imported/A_Dungeons_Dragons__1214020752_0.jpg-f1f4a0847dcdd6c1974babbd26a10951.ctex"
+path.s3tc="res://.godot/imported/A_Dungeons_Dragons__1214020752_0.jpg-f1f4a0847dcdd6c1974babbd26a10951.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 generator_parameters={
 "md5": "ea3a7c4bd95c93f3350f3d620563cd75"
@@ -14,11 +15,11 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/A_Dungeons_Dragons__1214020752_0.jpg"
-dest_files=["res://.godot/imported/A_Dungeons_Dragons__1214020752_0.jpg-f1f4a0847dcdd6c1974babbd26a10951.ctex"]
+dest_files=["res://.godot/imported/A_Dungeons_Dragons__1214020752_0.jpg-f1f4a0847dcdd6c1974babbd26a10951.s3tc.ctex"]
 
 [params]
 
-compress/mode=0
+compress/mode=2
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
@@ -34,4 +35,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=1
+detect_3d/compress_to=0
