@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=3 uid="uid://dn1xjrw1yneef"]
+[gd_scene load_steps=11 format=3 uid="uid://cj3hoookxfayd"]
 
 [ext_resource type="Script" path="res://Scripts/platform.gd" id="1_y4q53"]
 [ext_resource type="PackedScene" uid="uid://bxqi3vverrk8i" path="res://biped/Animation_Gangnam_Groove_withSkin.glb" id="2_6hbfc"]
