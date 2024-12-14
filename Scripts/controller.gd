@@ -1,32 +1,44 @@
 extends CharacterBody3D
 
+@export var player_scene: PackedScene
 
-const SPEED = 5.0
-const CROUCH_SPEED = 2
-const NORMAL_HEIGH = 1
-const CROUCH_HEIGH = 0.5
-const JUMP_VELOCITY = 4.5
+# NORMAL CONTROLS INIT
+const JUMP_VELOCITY = 1.5
+const NORMAL_SPEED = 1.0
+const RUN_SPEED = 2.0
 const GRAVITY = Vector3(0, -9.8, 0)
+
+# CROUCH CONTROLS INIT
+const CROUCH_TRANSITION_SPEED = 4
+const NORMAL_HEIGH = 1.0
+const CROUCH_HEIGH = 0.5
+
+#MOUSE ROTATE INIT
 const MOUSE_SENSE = 0.2
 const VERTICAL_LIMIT = 89.0
 
 #const GRAB_DISTANCE = 1.00
 #const THROW_FORCE = 10.0
 
-var rotation_x = 0.0
-#var grabbed_object = null
-
+#CROUCH INIT
 var is_crouching = false
 var original_heigh = 0.0
 var original_radius = 0.0
-
 var crouch_mode = "click"
 var crouch_toggle_click = true
+var target_height = NORMAL_HEIGH
 
+#ROTATE INIT
+var rotation_x = 0.0
+
+#RUN INIT
+var speed = 1.0
+#var grabbed_object = null
 #@onready var camera = $Node3D/Camera3D
 #@onready var raycast = $Node3D/Camera3D/RayCast3D
 
 func _ready():
+	
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 	var capsule = $CollisionShape3D.shape
 	original_heigh = capsule.height
@@ -43,20 +55,25 @@ func _physics_process(delta: float) -> void:
 		velocity += GRAVITY * delta
 
 	# Handle jump.
-	if Input.is_action_just_pressed("ui_accept") and is_on_floor():
+	if Input.is_action_pressed("jump") and is_on_floor():
 		velocity.y = JUMP_VELOCITY
+	if Input.is_action_just_pressed("run") and is_on_floor() and Input.is_action_pressed("move_forward"):
+		speed = RUN_SPEED
+	if Input.is_action_just_released("run"):
+		speed = NORMAL_SPEED
 
+	update_crouch(delta)
 	# Get the input direction and handle the movement/deceleration.
-	# As good practice, you should replace UI awawda  a tions with custom gameplay actions.
+	# As good practice, you should replace UI awawda  a wtions with custom gameplay actions.
 	var input_dir := Input.get_vector("move_left", "move_right", "move_forward", "move_back")
 	var direction := (transform.basis * Vector3(input_dir.x, 0, input_dir.y)).normalized()
 	
 	if direction != Vector3.ZERO:
-		velocity.x = direction.x * SPEED
-		velocity.z = direction.z * SPEED
+		velocity.x = direction.x * speed
+		velocity.z = direction.z * speed
 	else:
-		velocity.x = move_toward(velocity.x, 0, SPEED)
-		velocity.z = move_toward(velocity.z, 0, SPEED)
+		velocity.x = move_toward(velocity.x, 0, speed)
+		velocity.z = move_toward(velocity.z, 0, speed)
 		
 	Input.set_mouse_mode(Input.MOUSE_MODE_CAPTURED)
 
@@ -69,9 +86,9 @@ func _input(event):
 		rotation_x = clamp(rotation_x, -VERTICAL_LIMIT, VERTICAL_LIMIT)
 		$Node3D/Camera3D.rotation_degrees.x = rotation_x
 	if Input.is_action_just_pressed("crouch"):
-		crouch()
-	elif Input.is_action_just_released("crouch"):
-		crouch()
+		toggle_crouch()
+	if Input.is_action_just_released("crouch"):
+		toggle_crouch()
 
 #	if Input.is_action_just_pressed("grab"):
 #		if grabbed_object:
@@ -110,6 +127,8 @@ func _input(event):
 #		var throw_vector = camera.global_transform.basis.z * THROW_FORCE
 #		grabbed_object.apply_impulse(Vector3.ZERO, throw_vector)
 
+# CROUCH FUNCTIONS
+
 func crouch():
 	is_crouching = !is_crouching
 	var capsule = $CollisionShape3D.shape
@@ -119,10 +138,17 @@ func crouch():
 		capsule.radius *= 0.5
 	else:
 		capsule.height = original_heigh
-		capsule.radius += original_radius
+		capsule.radius /= 0.5
 
 
+func toggle_crouch():
+	is_crouching = !is_crouching
+	target_height = CROUCH_HEIGH if is_crouching else NORMAL_HEIGH
 
-func set_crouch_mode(mode: String):
-	crouch_mode = mode
-	crouch_toggle_click = false
+func update_crouch(delta: float):
+	var capsule = $CollisionShape3D.shape
+	# Smoothly interpolate the height of the collision shape
+	capsule.height = lerp(capsule.height, target_height, CROUCH_TRANSITION_SPEED * delta)
+
+	# Optionally adjust the radius proportionally
+	capsule.radius = lerp(capsule.radius, original_radius * (CROUCH_HEIGH if is_crouching else NORMAL_HEIGH), CROUCH_TRANSITION_SPEED * delta)

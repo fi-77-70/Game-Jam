@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbf7rh53yh1ax"
-path="res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"
+uid="uid://g7oonmdjnkhs"
+path="res://.godot/imported/toy_rocking_horse_mad_1214005305_texture.glb-df8d18c35e2b8b6d75e14070556b6845.scn"
 
 [deps]
 
-source_file="res://assets/Christmas_present_pil_1213234534_texture.glb"
-dest_files=["res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"]
+source_file="res://assets/toy_rocking_horse_mad_1214005305_texture.glb"
+dest_files=["res://.godot/imported/toy_rocking_horse_mad_1214005305_texture.glb-df8d18c35e2b8b6d75e14070556b6845.scn"]
 
 [params]
 
