@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3lrsoogyuea7"
-path.s3tc="res://.godot/imported/Christmas_present_pil_1213234534_texture_0.jpg-a831709328695abce1399c8b89dd6213.s3tc.ctex"
+uid="uid://c7g1dbkg1gw4y"
+path.s3tc="res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture_0.jpg-98e52282e59722049f7e64777caa8b1a.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1dfd11e56b1c114a406ad85d4063d8b5"
+"md5": "864b59754c034ef5bcceb5ffbb99106f"
 }
 
 [deps]
 
-source_file="res://assets/Christmas_present_pil_1213234534_texture_0.jpg"
-dest_files=["res://.godot/imported/Christmas_present_pil_1213234534_texture_0.jpg-a831709328695abce1399c8b89dd6213.s3tc.ctex"]
+source_file="res://assets/Create_a_creepy_nutcr_1214005149_texture_0.jpg"
+dest_files=["res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture_0.jpg-98e52282e59722049f7e64777caa8b1a.s3tc.ctex"]
 
 [params]
 

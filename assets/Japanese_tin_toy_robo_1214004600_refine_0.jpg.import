@@ -2,20 +2,20 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://c3lrsoogyuea7"
-path.s3tc="res://.godot/imported/Christmas_present_pil_1213234534_texture_0.jpg-a831709328695abce1399c8b89dd6213.s3tc.ctex"
+uid="uid://bwa3hav25j27t"
+path.s3tc="res://.godot/imported/Japanese_tin_toy_robo_1214004600_refine_0.jpg-738088c7071bfb806838eef06758bb3b.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
 generator_parameters={
-"md5": "1dfd11e56b1c114a406ad85d4063d8b5"
+"md5": "9de5a393c3d584cb1075f68f512d7c69"
 }
 
 [deps]
 
-source_file="res://assets/Christmas_present_pil_1213234534_texture_0.jpg"
-dest_files=["res://.godot/imported/Christmas_present_pil_1213234534_texture_0.jpg-a831709328695abce1399c8b89dd6213.s3tc.ctex"]
+source_file="res://assets/Japanese_tin_toy_robo_1214004600_refine_0.jpg"
+dest_files=["res://.godot/imported/Japanese_tin_toy_robo_1214004600_refine_0.jpg-738088c7071bfb806838eef06758bb3b.s3tc.ctex"]
 
 [params]
 

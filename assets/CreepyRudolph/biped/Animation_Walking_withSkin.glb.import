@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbf7rh53yh1ax"
-path="res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"
+uid="uid://cwxd6a63aaxh"
+path="res://.godot/imported/Animation_Walking_withSkin.glb-9b6185790ea82b6acf5886d45beed6cd.scn"
 
 [deps]
 
-source_file="res://assets/Christmas_present_pil_1213234534_texture.glb"
-dest_files=["res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"]
+source_file="res://assets/CreepyRudolph/biped/Animation_Walking_withSkin.glb"
+dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-9b6185790ea82b6acf5886d45beed6cd.scn"]
 
 [params]
 

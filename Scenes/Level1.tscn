@@ -1,4 +1,6 @@
-[gd_scene load_steps=6 format=3 uid="uid://k8wmjk3t1m1p"]
+[gd_scene load_steps=7 format=3 uid="uid://k8wmjk3t1m1p"]
+
+[ext_resource type="Script" path="res://Scripts/floor_script.gd" id="1_fskt4"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -37,6 +39,7 @@ shape = SubResource("BoxShape3D_4wvoe")
 
 [node name="MeshInstance3D" type="MeshInstance3D" parent="Floor"]
 mesh = SubResource("BoxMesh_m7tth")
+script = ExtResource("1_fskt4")
 
 [node name="MainWall" type="StaticBody3D" parent="."]
 transform = Transform3D(-4.37114e-08, 0, -30, 0, 4, 0, 1, 0, -1.31134e-06, 0, 3, -14.5)

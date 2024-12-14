@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://cbf7rh53yh1ax"
-path="res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"
+uid="uid://b5ponnt4jd0oh"
+path="res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture.glb-4de91865ec203c6d39c4f757e9fa2333.scn"
 
 [deps]
 
-source_file="res://assets/Christmas_present_pil_1213234534_texture.glb"
-dest_files=["res://.godot/imported/Christmas_present_pil_1213234534_texture.glb-0676afa8deb6c605250a5a92bf144d16.scn"]
+source_file="res://assets/Create_a_creepy_nutcr_1214005149_texture.glb"
+dest_files=["res://.godot/imported/Create_a_creepy_nutcr_1214005149_texture.glb-4de91865ec203c6d39c4f757e9fa2333.scn"]
 
 [params]
 
