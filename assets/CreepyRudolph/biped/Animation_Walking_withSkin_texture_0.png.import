@@ -3,9 +3,10 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqyblv8idf5h5"
-path="res://.godot/imported/Animation_Walking_withSkin_texture_0.png-9a9bb9046de62c6e5c7855bd77e9773a.ctex"
+path.s3tc="res://.godot/imported/Animation_Walking_withSkin_texture_0.png-9a9bb9046de62c6e5c7855bd77e9773a.s3tc.ctex"
 metadata={
-"vram_texture": false
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
