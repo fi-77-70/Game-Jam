@@ -1,6 +1,5 @@
 extends CharacterBody3D
 
-
 const SPEED = 5.0
 const CROUCH_SPEED = 2
 const NORMAL_HEIGH = 1
@@ -62,7 +61,10 @@ func _physics_process(delta: float) -> void:
 
 	move_and_slide()
 
+@onready var heyo = get_node("../Sound/Heyo")
 func _input(event):
+	if Input.is_action_just_pressed("play_heyo"):
+		heyo.play()
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x * MOUSE_SENSE))
 		rotation_x += -event.relative.y * MOUSE_SENSE
@@ -120,8 +122,6 @@ func crouch():
 	else:
 		capsule.height = original_heigh
 		capsule.radius += original_radius
-
-
 
 func set_crouch_mode(mode: String):
 	crouch_mode = mode

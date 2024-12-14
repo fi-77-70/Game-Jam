@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://Scripts/platform.gd" id="1_y4q53"]
 [ext_resource type="PackedScene" uid="uid://bxqi3vverrk8i" path="res://biped/Animation_Gangnam_Groove_withSkin.glb" id="2_6hbfc"]
 [ext_resource type="Script" path="res://biped/animation_gangnam_groove_with_skin.gd" id="3_iaxu3"]
-[ext_resource type="PackedScene" path="res://Scripts/controller.tscn" id="4_dvg2c"]
+[ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scripts/controller.tscn" id="4_dvg2c"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_pys2d"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
