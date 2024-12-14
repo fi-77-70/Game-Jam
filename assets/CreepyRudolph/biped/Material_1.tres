@@ -1,0 +1,10 @@
+[gd_resource type="StandardMaterial3D" load_steps=2 format=3 uid="uid://8agn72ojlprq"]
+
+[ext_resource type="Texture2D" uid="uid://deiypirbwij6n" path="res://assets/CreepyRudolph/biped/Animation_Running_withSkin_texture_0.png" id="1_4fte7"]
+
+[resource]
+resource_name = "Material_1"
+cull_mode = 2
+albedo_texture = ExtResource("1_4fte7")
+metallic = 1.0
+emission_texture = ExtResource("1_4fte7")

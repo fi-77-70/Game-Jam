@@ -4,12 +4,12 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://qh1oi5j4s3cs"
-path="res://.godot/imported/Animation_Walking_withSkin.glb-9b6185790ea82b6acf5886d45beed6cd.scn"
+path="res://.godot/imported/Enemy.glb-671dcfba770ccb51d81704e1a0d0878f.scn"
 
 [deps]
 
-source_file="res://assets/CreepyRudolph/biped/Animation_Walking_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-9b6185790ea82b6acf5886d45beed6cd.scn"]
+source_file="res://assets/CreepyRudolph/biped/Enemy.glb"
+dest_files=["res://.godot/imported/Enemy.glb-671dcfba770ccb51d81704e1a0d0878f.scn"]
 
 [params]
 
@@ -1831,6 +1831,12 @@ _subresources={
 "slice_99/save_to_file/path": "",
 "slice_99/start_frame": 0,
 "slices/amount": 0
+}
+},
+"materials": {
+"Material_1": {
+"use_external/enabled": true,
+"use_external/path": "res://assets/CreepyRudolph/biped/Material_1.tres"
 }
 }
 }
