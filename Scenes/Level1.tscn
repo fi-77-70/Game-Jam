@@ -1,12 +1,13 @@
-[gd_scene load_steps=18 format=3 uid="uid://cc45xmw4y86ig"]
+[gd_scene load_steps=19 format=3 uid="uid://cc45xmw4y86ig"]
 
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="1_vwx7u"]
 [ext_resource type="Texture2D" uid="uid://doi5emy16fqjq" path="res://assets/textures/main_wall.png" id="2_bwpce"]
 [ext_resource type="Texture2D" uid="uid://chr7bdkqhh84x" path="res://assets/textures/wall.png" id="3_diuyy"]
 [ext_resource type="Script" path="res://player.gd" id="4_db7ur"]
 [ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="5_hsnub"]
-[ext_resource type="PackedScene" uid="uid://25ctru133em6" path="res://assets/Japanese_tin_toy_robo_1214004600_refine.glb" id="5_kkdjv"]
-[ext_resource type="PackedScene" uid="uid://cbf7rh53yh1ax" path="res://Christmas_present_pil_1213234534_texture.glb" id="6_frfev"]
+[ext_resource type="PackedScene" uid="uid://25ctru133em6" path="res://assets/decor_robot_toy/Japanese_tin_toy_robo_1214004600_refine.glb" id="5_kkdjv"]
+[ext_resource type="PackedScene" uid="uid://cbf7rh53yh1ax" path="res://assets/Present_pile/Christmas_present_pil_1213234534_texture.glb" id="6_frfev"]
+[ext_resource type="PackedScene" uid="uid://co4ki0v1f6mc2" path="res://Scripts/animation_running_with_skin.tscn" id="8_jijf0"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -17,10 +18,14 @@ sky_material = SubResource("ProceduralSkyMaterial_slnw4")
 
 [sub_resource type="Environment" id="Environment_a4xvc"]
 background_mode = 2
-background_energy_multiplier = 0.8
+background_energy_multiplier = 0.0
 sky = SubResource("Sky_qrqjx")
+ambient_light_sky_contribution = 0.5
+ambient_light_energy = 0.0
 tonemap_mode = 2
-glow_enabled = true
+glow_intensity = 0.51
+glow_hdr_luminance_cap = 0.0
+fog_light_energy = 0.16
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_4wvoe"]
 
@@ -49,6 +54,9 @@ height = 1.00743
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.297221, 0.82689, -0.477402, -6.75433e-10, 0.499998, 0.866027, 0.954809, -0.257401, 0.14861, 10.817, 4.20227, -11.5159)
+light_energy = 0.0
+light_indirect_energy = 0.0
+light_volumetric_fog_energy = 0.0
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -199,3 +207,6 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48701, 2.00423, -13.5385)
 
 [node name="Christmas_present_pil_1213234534_texture" parent="." instance=ExtResource("6_frfev")]
 transform = Transform3D(1.99805, -0.000609593, 0.0883431, 0.0005176, 2, 0.0020944, -0.0883437, -0.0020695, 1.99805, 4.91516, 1.85692, -13.2432)
+
+[node name="Animation_Running_withSkin" parent="." instance=ExtResource("8_jijf0")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.586854, 0.97902, -2.12959)

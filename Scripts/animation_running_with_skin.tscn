@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://co4ki0v1f6mc2"]
+
+[ext_resource type="PackedScene" uid="uid://bte0xg68qn7xl" path="res://assets/Santa/biped/Animation_Running_withSkin.glb" id="1_aaa5m"]
+[ext_resource type="Script" path="res://santa_animation.gd" id="2_2w8cu"]
+
+[node name="Animation_Running_withSkin" instance=ExtResource("1_aaa5m")]
+
+[node name="Skeleton3D" parent="Armature" index="0"]
+bones/0/position = Vector3(0.00341238, 0.12792, -0.493191)
+bones/0/rotation = Quaternion(-0.748378, -0.0674243, 0.0704084, 0.65607)
+bones/1/rotation = Quaternion(0.895119, 0.199178, -0.350621, 0.190145)
+bones/2/rotation = Quaternion(0.839263, 0.217754, -0.0952642, 0.489025)
+bones/3/rotation = Quaternion(-0.50496, -0.120022, -0.140931, 0.843059)
+bones/4/rotation = Quaternion(-0.252932, -0.00230285, -0.0174486, 0.967324)
+bones/5/rotation = Quaternion(0.928301, -0.287822, 0.20426, -0.117018)
+bones/6/rotation = Quaternion(0.306724, -0.401278, -0.189286, 0.842061)
+bones/7/rotation = Quaternion(-0.620005, 0.026779, 0.115247, 0.775626)
+bones/8/rotation = Quaternion(-0.505295, 0.0702665, -0.00649885, 0.860056)
+bones/9/rotation = Quaternion(0.177721, 0.15494, 0.0179929, 0.971641)
+bones/10/rotation = Quaternion(-0.0282048, 0.0159163, 0.0153992, 0.999357)
+bones/11/rotation = Quaternion(-0.159006, -0.0343465, -0.0103027, 0.986626)
+bones/12/rotation = Quaternion(0.663875, 0.521455, -0.403233, 0.353211)
+bones/13/rotation = Quaternion(0.401137, 0.643308, -0.193228, 0.622822)
+bones/14/rotation = Quaternion(-0.370436, 0.113058, 0.421246, 0.82009)
+bones/15/rotation = Quaternion(-0.0744233, -0.11533, -0.0178565, 0.990374)
+bones/16/rotation = Quaternion(-0.598566, 0.590412, -0.432024, -0.326323)
+bones/17/rotation = Quaternion(0.273738, -0.491848, -0.0934442, 0.821232)
+bones/18/rotation = Quaternion(-0.633836, -0.180225, -0.476583, 0.581928)
+bones/19/rotation = Quaternion(0.241021, 0.0301823, 0.0690103, 0.967593)
+bones/20/rotation = Quaternion(0.138338, 0.0284787, -0.00533868, 0.989961)
+bones/21/rotation = Quaternion(0.161172, -0.0525993, 0.00599258, 0.985505)
+bones/22/rotation = Quaternion(-0.176526, 0.00229286, 0.0062486, 0.984273)
+
+[node name="char1" parent="Armature/Skeleton3D" index="0"]
+physics_interpolation_mode = 2
+lod_bias = 0.001
+
+[node name="AnimationPlayer" parent="." index="1"]
+script = ExtResource("2_2w8cu")
