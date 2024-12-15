@@ -16,7 +16,17 @@
 [ext_resource type="PackedScene" uid="uid://04qmy3v21nbx" path="res://assets/Tools/Hand_Drill/vintage_hand_drill_1k.gltf" id="14_np4nb"]
 [ext_resource type="PackedScene" uid="uid://db7pl7cujbhgg" path="res://assets/Tools/screwdiver/flathead_screwdriver_1k.gltf" id="15_5jjep"]
 [ext_resource type="PackedScene" uid="uid://cp8u5xnaxnrec" path="res://Scenes/Assets/door.tscn" id="16_7d8np"]
+<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="17_3bue2"]
+=======
+[ext_resource type="PackedScene" uid="uid://cchloxstnn1x5" path="res://assets/Tools/Present/Single_Christmas_pres_1214083342_texture.glb" id="19_n42mh"]
+[ext_resource type="PackedScene" uid="uid://b77uxpeydlh2w" path="res://Scenes/Assets/present_pile.tscn" id="20_bkqal"]
+[ext_resource type="PackedScene" uid="uid://bqmgavi68ds6p" path="res://Scenes/Assets/robot.tscn" id="20_l55pj"]
+[ext_resource type="PackedScene" uid="uid://cc5wn6hurdtw6" path="res://assets/Hat/Christmas_Santa_s_Hat_1214091135.glb" id="20_oa1ds"]
+[ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="22_8x0m7"]
+[ext_resource type="PackedScene" uid="uid://blcb7mtdv687p" path="res://Scenes/Enemy.tscn" id="23_b80l4"]
+[ext_resource type="PackedScene" uid="uid://bmnbwqc35tsks" path="res://Scenes/elf_boss.tscn" id="24_j1qmi"]
+>>>>>>> 237c3b70fc1cfd86766977bc80ddf3c7446bef86
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -289,6 +299,18 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.77498, 0, 0)
 
 [node name="Chair3" parent="NavigationRegion3D/Assets/Workshop/Chairs" instance=ExtResource("12_pfn4g")]
 transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -2.19744, 0, -8.76516)
+
+[node name="Chair" type="Node3D" parent="NavigationRegion3D/Assets/Workshop/Chairs"]
+
+[node name="asset" parent="NavigationRegion3D/Assets/Workshop/Chairs/Chair" instance=ExtResource("11_d0uum")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 2.67233, 1.50502, -2.77292)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="NavigationRegion3D/Assets/Workshop/Chairs/Chair"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.672, 1.505, -2.773)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="NavigationRegion3D/Assets/Workshop/Chairs/Chair/RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00888062, 0, -0.013916)
+shape = SubResource("BoxShape3D_gxys4")
 
 [node name="Tools" type="Node3D" parent="NavigationRegion3D/Assets/Workshop"]
 

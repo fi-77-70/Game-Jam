@@ -1,7 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://c4p47j6xe7ied"]
 
 [ext_resource type="Script" path="res://Scenes/start_menu.gd" id="1_61kv7"]
-[ext_resource type="Texture2D" uid="uid://k1aofxiw1ghf" path="res://assets/textures/background.jpg" id="2_850l4"]
+[ext_resource type="Texture2D" uid="uid://c8drf2lxodbqp" path="res://assets/textures/background.png" id="2_owga7"]
 
 [node name="StartMenu" type="Control"]
 layout_mode = 3
@@ -12,7 +12,7 @@ script = ExtResource("1_61kv7")
 layout_mode = 0
 offset_right = 1153.0
 offset_bottom = 646.0
-texture = ExtResource("2_850l4")
+texture = ExtResource("2_owga7")
 
 [node name="Title" type="Label" parent="."]
 layout_mode = 0
@@ -20,7 +20,7 @@ offset_left = 431.0
 offset_top = 116.0
 offset_right = 736.0
 offset_bottom = 297.0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
 theme_override_font_sizes/font_size = 30
 text = "CHRISTMAS TERROR"
 horizontal_alignment = 1
@@ -39,13 +39,3 @@ alignment = 1
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "START GAME"
-
-[node name="OptionsButton" type="Button" parent="Buttons"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "OPTIONS"
-
-[node name="QuitButton" type="Button" parent="Buttons"]
-layout_mode = 2
-theme_override_font_sizes/font_size = 20
-text = "EXIT GAME"
