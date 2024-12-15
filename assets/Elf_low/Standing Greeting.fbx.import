@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bjjt54sem0q2j"
-path="res://.godot/imported/Animation_Walking_withSkin.glb-4c2eb60fc26a8c067af963fc3199aabe.scn"
+uid="uid://bv7bxdw0hyx54"
+path="res://.godot/imported/Standing Greeting.fbx-f992d536c2e940d8e2aa731dcc593711.scn"
 
 [deps]
 
-source_file="res://assets/santa/biped/Animation_Walking_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-4c2eb60fc26a8c067af963fc3199aabe.scn"]
+source_file="res://assets/Elf_low/Standing Greeting.fbx"
+dest_files=["res://.godot/imported/Standing Greeting.fbx-f992d536c2e940d8e2aa731dcc593711.scn"]
 
 [params]
 
@@ -27,10 +27,11 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=false
+animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
-gltf/embedded_image_handling=1
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://bjjt54sem0q2j"
-path="res://.godot/imported/Animation_Walking_withSkin.glb-4c2eb60fc26a8c067af963fc3199aabe.scn"
+uid="uid://c16mbpjdegf7t"
+path="res://.godot/imported/Standard Walk.fbx-75dcd521315d9144b8dd188d08e803a6.scn"
 
 [deps]
 
-source_file="res://assets/santa/biped/Animation_Walking_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-4c2eb60fc26a8c067af963fc3199aabe.scn"]
+source_file="res://assets/Nut_low/Standard Walk.fbx"
+dest_files=["res://.godot/imported/Standard Walk.fbx-75dcd521315d9144b8dd188d08e803a6.scn"]
 
 [params]
 
@@ -27,10 +27,11 @@ meshes/force_disable_compression=false
 skins/use_named_skins=true
 animation/import=true
 animation/fps=30
-animation/trimming=false
+animation/trimming=true
 animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
-gltf/embedded_image_handling=1
+fbx/importer=0
+fbx/allow_geometry_helper_nodes=false
+fbx/embedded_image_handling=1

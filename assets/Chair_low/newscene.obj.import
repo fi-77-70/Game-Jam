@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ctcerv32ux5wy"
+path="res://.godot/imported/newscene.obj-7534c0751be4edda590ff26b9d66c594.mesh"
+
+[deps]
+
+files=["res://.godot/imported/newscene.obj-7534c0751be4edda590ff26b9d66c594.mesh"]
+
+source_file="res://assets/Chair_low/newscene.obj"
+dest_files=["res://.godot/imported/newscene.obj-7534c0751be4edda590ff26b9d66c594.mesh", "res://.godot/imported/newscene.obj-7534c0751be4edda590ff26b9d66c594.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
