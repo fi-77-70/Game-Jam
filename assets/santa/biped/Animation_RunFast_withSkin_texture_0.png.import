@@ -2,7 +2,7 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hdu31v4v7qgk"
+uid="uid://belixwf8naump"
 valid=false
 generator_parameters={
 "md5": "b00cf891f3d61794c5e47f11821d7d89"
@@ -14,7 +14,7 @@ source_file="res://assets/Santa/biped/Animation_RunFast_withSkin_texture_0.png"
 
 [params]
 
-compress/mode=2
+compress/mode=0
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
@@ -30,4 +30,4 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
-detect_3d/compress_to=0
+detect_3d/compress_to=1
