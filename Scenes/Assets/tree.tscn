@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://doqo5pbf3my8g"]
+
+[ext_resource type="PackedScene" uid="uid://ducwe1xeb1p8n" path="res://assets/Tree/A_tall_lush_evergree_1214095124.glb" id="1_l2lbs"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_o5adj"]
+size = Vector3(1.1875, 2.01489, 1.08105)
+
+[node name="Tree" type="Node3D"]
+
+[node name="Tree" parent="." instance=ExtResource("1_l2lbs")]
+transform = Transform3D(1, 2.18279e-11, -2.5411e-21, -1.81899e-11, 1, -1.16415e-10, 2.11758e-21, -1.16415e-10, 1, 8.60976, 2.0081, -13.2496)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 2.18279e-11, -2.5411e-21, -1.81899e-11, 1, -1.16415e-10, 2.11758e-21, -1.16415e-10, 1, 8.60976, 2.0081, -13.2496)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00488281, 0.0152588, 0.0405273)
+shape = SubResource("BoxShape3D_o5adj")

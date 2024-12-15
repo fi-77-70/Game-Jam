@@ -3,19 +3,14 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://hdu31v4v7qgk"
-path.s3tc="res://.godot/imported/Animation_RunFast_withSkin_texture_0.png-9f48ad27758e6420beb3fd810c2ce741.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "b00cf891f3d61794c5e47f11821d7d89"
 }
 
 [deps]
 
-source_file="res://assets/santa/biped/Animation_RunFast_withSkin_texture_0.png"
-dest_files=["res://.godot/imported/Animation_RunFast_withSkin_texture_0.png-9f48ad27758e6420beb3fd810c2ce741.s3tc.ctex"]
+source_file="res://assets/Santa/biped/Animation_RunFast_withSkin_texture_0.png"
 
 [params]
 

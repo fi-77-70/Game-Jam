@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cqlgi1w2hesl3"]
+
+[ext_resource type="PackedScene" uid="uid://baet1067pyaq" path="res://assets/Chair/A_Dungeons_Dragons__1214020752.glb" id="1_eo8du"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_m4jdn"]
+size = Vector3(1.43567, 1.97406, 1.23578)
+
+[node name="Chair" type="Node3D"]
+
+[node name="Texture" parent="." instance=ExtResource("1_eo8du")]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 2.57296, 1.50014, -2.78049)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(-0.5, 0, -4.37114e-08, 0, 0.5, 0, 4.37114e-08, 0, -0.5, 2.57296, 1.50014, -2.78049)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0010376, 0.00601196, -0.00271606)
+shape = SubResource("BoxShape3D_m4jdn")

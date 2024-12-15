@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bqmgavi68ds6p"]
+
+[ext_resource type="PackedScene" uid="uid://25ctru133em6" path="res://assets/decor_robot_toy/Japanese_tin_toy_robo_1214004600_refine.glb" id="1_rfo3u"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_1e25r"]
+size = Vector3(1.07079, 2.00488, 0.606339)
+
+[node name="Robot" type="Node3D"]
+
+[node name="Texture" parent="." instance=ExtResource("1_rfo3u")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48701, 2.00423, -13.5385)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.48225, 2.00042, -13.549)
+shape = SubResource("BoxShape3D_1e25r")
