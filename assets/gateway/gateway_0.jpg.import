@@ -2,6 +2,15 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+uid="uid://bgk1pvgo3asfr"
+path="res://.godot/imported/gateway_0.jpg-90b338333b504bcac8a543df6de8067e.ctex"
+metadata={
+"vram_texture": false
+=======
+>>>>>>> origin
 uid="uid://cic0e37n8jsvs"
 path.s3tc="res://.godot/imported/gateway_0.jpg-90b338333b504bcac8a543df6de8067e.s3tc.ctex"
 metadata={
@@ -10,22 +19,48 @@ metadata={
 }
 generator_parameters={
 "md5": "a81ee78c4de0826247c1e9a07fb53bfa"
+<<<<<<< HEAD
+=======
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 }
 
 [deps]
 
 source_file="res://assets/gateway/gateway_0.jpg"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+dest_files=["res://.godot/imported/gateway_0.jpg-90b338333b504bcac8a543df6de8067e.ctex"]
+
+[params]
+
+compress/mode=0
+=======
+>>>>>>> origin
 dest_files=["res://.godot/imported/gateway_0.jpg-90b338333b504bcac8a543df6de8067e.s3tc.ctex"]
 
 [params]
 
 compress/mode=2
+<<<<<<< HEAD
+=======
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 compress/high_quality=false
 compress/lossy_quality=0.7
 compress/hdr_compression=1
 compress/normal_map=0
 compress/channel_pack=0
+<<<<<<< HEAD
 mipmaps/generate=true
+=======
+<<<<<<< HEAD
+mipmaps/generate=false
+=======
+mipmaps/generate=true
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 mipmaps/limit=-1
 roughness/mode=0
 roughness/src_normal=""
@@ -35,4 +70,12 @@ process/normal_map_invert_y=false
 process/hdr_as_srgb=false
 process/hdr_clamp_exposure=false
 process/size_limit=0
+<<<<<<< HEAD
 detect_3d/compress_to=0
+=======
+<<<<<<< HEAD
+detect_3d/compress_to=1
+=======
+detect_3d/compress_to=0
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin

@@ -11,14 +11,16 @@ config_version=5
 [application]
 
 config/name="Christmas Terror"
-run/main_scene="res://Scenes/Level1.tscn"
+run/main_scene="res://Scenes/StartMenu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
-[display]
+[autoload]
 
-window/stretch/mode="canvas_items"
-window/stretch/aspect="expand"
+GlobalManager="*res://Scripts/GlobalManager.gd"
+[autoload]
+
+StartMenu="*res://Scenes/StartMenu.tscn"
 
 [dotnet]
 
@@ -83,7 +85,7 @@ light={
 
 [navigation]
 
-3d/default_cell_size=0.001
+3d/default_cell_height=0.0
 
 [rendering]
 

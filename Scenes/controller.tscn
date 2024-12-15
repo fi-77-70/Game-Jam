@@ -2,6 +2,8 @@
 
 [ext_resource type="Script" path="res://Scripts/controller.gd" id="1_pd50x"]
 [ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="2_dkcx8"]
+[ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="3_0jlh2"]
+[ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="4_yt1lc"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qqkou"]
 radius = 0.1

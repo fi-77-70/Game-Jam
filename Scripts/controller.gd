@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @export var player_scene: PackedScene
+@onready var heyo = $Sound/Heyo
 
 # NORMAL CONTROLS INIT
 const JUMP_VELOCITY = 1.5
@@ -81,13 +82,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _input(event):
-	if Input.is_action_just_pressed("light"):
-		if($Lantern_01_1k/OmniLight3D.omni_range):
-			$Lantern_01_1k.visible = 0
-			$Lantern_01_1k/OmniLight3D.omni_range = 0
-		else:
-			$Lantern_01_1k.visible = 1
-			$Lantern_01_1k/OmniLight3D.omni_range = 5
+	if Input.is_action_just_pressed("play_heyo"):
+		heyo.play()
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x * MOUSE_SENSE))
 		rotation_x += -event.relative.y * MOUSE_SENSE
