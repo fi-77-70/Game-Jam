@@ -1,0 +1,19 @@
+[gd_scene load_steps=3 format=3 uid="uid://bc7djcn2ftvcd"]
+
+[ext_resource type="PackedScene" uid="uid://3eqjaqrr6y6f" path="res://assets/bunk_bed/A_cozy_compact_bunk__1214043555_texture.glb" id="1_nojie"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_wqk1o"]
+size = Vector3(0.876801, 1.18271, 1.3821)
+
+[node name="Bed" type="Node3D"]
+transform = Transform3D(-4.37114e-08, 2.18279e-11, 1, 1.16415e-10, 1, -1.81899e-11, -1, -1.16415e-10, -4.37114e-08, 13.2999, 1.59764, -13.5072)
+
+[node name="bed1" parent="." instance=ExtResource("1_nojie")]
+transform = Transform3D(-4.37114e-08, 2.18279e-11, 1, 1.16415e-10, 1, -1.81899e-11, -1, -1.16415e-10, -4.37114e-08, 0, 0, 0)
+
+[node name="RigidBody3D2" type="RigidBody3D" parent="."]
+transform = Transform3D(-4.37114e-08, 2.18279e-11, 1, 1.16415e-10, 1, -1.81899e-11, -1, -1.16415e-10, -4.37114e-08, 0, 0, 0)
+
+[node name="CollisionShape3D2" type="CollisionShape3D" parent="RigidBody3D2"]
+transform = Transform3D(1, 1.79221e-18, 0, -5.29068e-18, 1, 0, 0, 0, 1, 0.0388336, -0.0756512, -0.0039444)
+shape = SubResource("BoxShape3D_wqk1o")
