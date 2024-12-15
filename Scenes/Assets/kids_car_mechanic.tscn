@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://uy2j2yt3kpwh"]
+
+[ext_resource type="PackedScene" uid="uid://clhmfwcpyi5ox" path="res://assets/walls_assets/Kids_car_mechanic.glb" id="1_0q7w7"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_nwgo0"]
+size = Vector3(1, 1.23474, 2.0509)
+
+[node name="Kids_car_mechanic" instance=ExtResource("1_0q7w7")]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.00238037, -0.0180054)
+shape = SubResource("BoxShape3D_nwgo0")
