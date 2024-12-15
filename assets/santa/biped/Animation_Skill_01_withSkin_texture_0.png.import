@@ -2,15 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://hdu31v4v7qgk"
-valid=false
-generator_parameters={
-"md5": "b00cf891f3d61794c5e47f11821d7d89"
+uid="uid://bqmd3307p6vu"
+path.s3tc="res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-fe339da9960f83d212b45681805972c0.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
 }
 
 [deps]
 
-source_file="res://assets/santa/biped/Animation_RunFast_withSkin_texture_0.png"
+source_file="res://assets/santa/biped/Animation_Skill_01_withSkin_texture_0.png"
+dest_files=["res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-fe339da9960f83d212b45681805972c0.s3tc.ctex"]
 
 [params]
 

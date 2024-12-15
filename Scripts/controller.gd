@@ -81,6 +81,13 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _input(event):
+	if Input.is_action_just_pressed("light"):
+		if($Lantern_01_1k/OmniLight3D.omni_range):
+			$Lantern_01_1k.visible = 0
+			$Lantern_01_1k/OmniLight3D.omni_range = 0
+		else:
+			$Lantern_01_1k.visible = 1
+			$Lantern_01_1k/OmniLight3D.omni_range = 5
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x * MOUSE_SENSE))
 		rotation_x += -event.relative.y * MOUSE_SENSE
@@ -142,3 +149,9 @@ func update_crouch(delta: float):
 	# Smoothly interpolate the height of the collision shape
 	capsule.height = lerp(capsule.height, target_height, CROUCH_TRANSITION_SPEED * delta)
 	capsule.radius = lerp(capsule.radius, original_radius * (CROUCH_HEIGH if is_crouching else NORMAL_HEIGH), CROUCH_TRANSITION_SPEED * delta)
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if body.is_in_group("enemys"):
+		get_tree().change_scene_to_file("res://Scenes/YouDied.tscn")
+	pass # Replace with function body.
