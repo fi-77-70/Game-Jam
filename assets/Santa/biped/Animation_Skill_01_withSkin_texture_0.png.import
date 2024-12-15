@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://d1txuk5vu74cr"
-path="res://.godot/imported/Crates_and_barrels_0.jpg-adaa22347ed6852208e1bf6cf888ad67.ctex"
+uid="uid://cesrtqljy4yi6"
+path="res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-e7728b0eae8a506c837cdd13d82a447d.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/crates_toys/Crates_and_barrels_0.jpg"
-dest_files=["res://.godot/imported/Crates_and_barrels_0.jpg-adaa22347ed6852208e1bf6cf888ad67.ctex"]
+source_file="res://assets/Santa/biped/Animation_Skill_01_withSkin_texture_0.png"
+dest_files=["res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-e7728b0eae8a506c837cdd13d82a447d.ctex"]
 
 [params]
 
