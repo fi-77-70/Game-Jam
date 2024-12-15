@@ -1,9 +1,16 @@
-[gd_scene load_steps=4 format=3 uid="uid://blcb7mtdv687p"]
+[gd_scene load_steps=6 format=3 uid="uid://blcb7mtdv687p"]
 
 [ext_resource type="Script" path="res://Scripts/enemy.gd" id="1_appy3"]
 [ext_resource type="PackedScene" uid="uid://qh1oi5j4s3cs" path="res://assets/CreepyRudolph/biped/Enemy.glb" id="2_de4fi"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5q1p8"]
+size = Vector3(1, 1.28406, 0.48468)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_0y8yc"]
+radius = 1.84299
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_s1n1i"]
+size = Vector3(1, 1.6134, 0.60498)
 
 [node name="Enemy" type="CharacterBody3D" groups=["player"]]
 script = ExtResource("1_appy3")
@@ -14,8 +21,24 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.
 [node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.142029, 0.0343933)
 shape = SubResource("BoxShape3D_5q1p8")
 
 [node name="OmniLight3D" type="OmniLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.916196, 0.33594)
 light_color = Color(0.814269, 0, 0.0516188, 1)
+
+[node name="Detector" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Detector"]
+shape = SubResource("SphereShape3D_0y8yc")
+
+[node name="Dead" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Dead"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.306702, 0.00952148)
+shape = SubResource("BoxShape3D_s1n1i")
+
+[connection signal="body_entered" from="Detector" to="." method="_on_detector_body_entered"]
+[connection signal="body_exited" from="Detector" to="." method="_on_detector_body_exited"]
+[connection signal="body_entered" from="Dead" to="." method="_on_dead_body_entered"]
