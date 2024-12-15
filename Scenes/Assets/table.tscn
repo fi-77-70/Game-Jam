@@ -1,0 +1,18 @@
+[gd_scene load_steps=3 format=3 uid="uid://cuh5e34n5asqi"]
+
+[ext_resource type="PackedScene" uid="uid://c6b1kr11updrx" path="res://assets/Table/WoodenTable_01_1k.gltf" id="1_hhc5g"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_qqqv7"]
+size = Vector3(1.78697, 1.05469, 0.652466)
+
+[node name="Table" type="Node3D"]
+
+[node name="Texture" parent="." instance=ExtResource("1_hhc5g")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0060041, 0.0273445, 0.00555444)
+shape = SubResource("BoxShape3D_qqqv7")

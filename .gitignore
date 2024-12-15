@@ -1,3 +1,4 @@
 # Godot 4+ specific ignores
 .godot/
 /android/
+assets/santa/biped/Animation_RunFast_withSkin_texture_0.png.import
