@@ -31,12 +31,13 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021, 0.013)
+fov = 100.0
 
 [node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
 target_position = Vector3(0, 0, -1)
 
 [node name="Lantern_01_1k" parent="." instance=ExtResource("2_dkcx8")]
-transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.152466, 0.451968, -0.11224)
+transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.243079, 0.451968, -0.11224)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lantern_01_1k"]
 transform = Transform3D(1.3245, 0, 0, 0, 1.3245, 0, 0, 0, 1.3245, -0.0646932, 0.078846, 0.0107795)
