@@ -1,7 +1,7 @@
 extends CharacterBody3D
 
 @export var player_scene: PackedScene
-@onready var heyo = $Sound/Heyo
+@onready var heyo = $Heyo
 
 # NORMAL CONTROLS INIT
 const JUMP_VELOCITY = 1.5

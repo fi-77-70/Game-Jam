@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=3 uid="uid://dtw0ms64argxf"]
+[gd_scene load_steps=21 format=3 uid="uid://dtw0ms64argxf"]
 
 [ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="1_emxbg"]
 [ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="2_hajau"]
@@ -8,6 +8,7 @@
 [ext_resource type="PackedScene" uid="uid://doqo5pbf3my8g" path="res://Scenes/Assets/tree.tscn" id="8_x60mi"]
 [ext_resource type="PackedScene" uid="uid://cuxkk2hac5pgl" path="res://Scenes/Assets/belt.tscn" id="10_lem8c"]
 [ext_resource type="PackedScene" uid="uid://cuh5e34n5asqi" path="res://Scenes/Assets/table.tscn" id="11_quunm"]
+[ext_resource type="PackedScene" uid="uid://bmnbwqc35tsks" path="res://Scenes/elf_boss.tscn" id="11_uxh6f"]
 [ext_resource type="PackedScene" uid="uid://cqlgi1w2hesl3" path="res://Scenes/Assets/chair.tscn" id="12_n8vko"]
 [ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="47_yhx8u"]
 
@@ -48,7 +49,7 @@ albedo_texture = ExtResource("5_nvbrs")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 transform = Transform3D(0.297221, 0.82689, -0.477402, -6.75433e-10, 0.499998, 0.866027, 0.954809, -0.257401, 0.14861, 10.817, 4.20227, -11.5159)
-light_energy = 0.97
+light_energy = 0.0
 shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
@@ -281,4 +282,25 @@ transform = Transform3D(0.92388, 0, -0.382683, 0, 1, 0, 0.382683, 0, 0.92388, 1.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.751, 1.57, 8.879)
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("47_yhx8u")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.08143, 0.928315, -10.8988)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 13.5202, 0.928315, -12.8471)
+
+[node name="ElfBoss" parent="." instance=ExtResource("11_uxh6f")]
+transform = Transform3D(-0.749557, 0, -0.0257821, 0, 0.75, 0, 0.0257821, 0, -0.749557, 3.67934, 1.39528, -4.98685)
+
+[node name="ElfBoss2" parent="." instance=ExtResource("11_uxh6f")]
+transform = Transform3D(-0.0228515, 0, -0.749652, 0, 0.75, 0, 0.749652, 0, -0.0228515, -9.71579, 1.45203, -8.65092)
+
+[node name="ElfBoss3" parent="." instance=ExtResource("11_uxh6f")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, -6.86028, 1.4014, 5.34283)
+
+[node name="ElfBoss4" parent="." instance=ExtResource("11_uxh6f")]
+transform = Transform3D(-0.0819234, 0, -0.745512, 0, 0.75, 0, 0.745512, 0, -0.0819234, -7.98582, 1, 11.436)
+
+[node name="ElfBoss5" parent="." instance=ExtResource("11_uxh6f")]
+transform = Transform3D(0.464526, 0, 0.588826, 0, 0.75, 0, -0.588826, 0, 0.464526, 0.791417, 1.3713, 9.24714)
+
+[node name="ElfBoss6" parent="." instance=ExtResource("11_uxh6f")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 10.8973, 1.37602, 10.3225)
+
+[node name="ElfBoss7" parent="." instance=ExtResource("11_uxh6f")]
+transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 12.0779, 1.36871, -2.55772)
