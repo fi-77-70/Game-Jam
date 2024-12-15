@@ -3,13 +3,12 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://ck2x5vdcfkfp5"
-path="res://.godot/imported/dead_elf_sited.glb-27e86b9a5552ce4f1c53bb0e89430775.scn"
+uid="uid://dac5hevlfibrf"
+valid=false
 
 [deps]
 
 source_file="res://assets/dead_elf_sited/dead_elf_sited.glb"
-dest_files=["res://.godot/imported/dead_elf_sited.glb-27e86b9a5552ce4f1c53bb0e89430775.scn"]
 
 [params]
 

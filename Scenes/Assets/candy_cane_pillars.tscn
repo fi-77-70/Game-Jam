@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://lpne3rxn51t3"]
+
+[ext_resource type="PackedScene" uid="uid://p63undngops7" path="res://assets/walls_assets/Candy_Cane_Pillars.glb" id="1_wbdgl"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_gpi7c"]
+size = Vector3(4.21094, 2.98999, 1.21667)
+
+[node name="Candy_Cane_Pillars" instance=ExtResource("1_wbdgl")]
+
+[node name="Mesh" parent="." index="0"]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, 0, 0, 0)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0712891, 0.0472412, -0.00250244)
+shape = SubResource("BoxShape3D_gpi7c")

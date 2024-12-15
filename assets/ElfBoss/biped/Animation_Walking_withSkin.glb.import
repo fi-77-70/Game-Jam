@@ -4,12 +4,11 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://cx5s0nnt8en6k"
-path="res://.godot/imported/Animation_Walking_withSkin.glb-8aa887bef483206e3a8fee8d39f01203.scn"
+valid=false
 
 [deps]
 
 source_file="res://assets/ElfBoss/biped/Animation_Walking_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-8aa887bef483206e3a8fee8d39f01203.scn"]
 
 [params]
 
