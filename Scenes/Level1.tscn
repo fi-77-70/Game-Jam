@@ -1,13 +1,10 @@
-<<<<<<< HEAD
 [gd_scene load_steps=59 format=3 uid="uid://cc45xmw4y86ig"]
-=======
-[gd_scene load_steps=57 format=3 uid="uid://cc45xmw4y86ig"]
->>>>>>> origin
 
 [ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="1_c3igu"]
 [ext_resource type="Script" path="res://Scripts/GlobalManager.gd" id="1_h7oxn"]
+[gd_scene load_steps=55 format=3 uid="uid://cc45xmw4y86ig"]
+
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="1_vwx7u"]
-[ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="2_b2e8s"]
 [ext_resource type="Texture2D" uid="uid://doi5emy16fqjq" path="res://assets/textures/main_wall.png" id="2_bwpce"]
 [ext_resource type="Texture2D" uid="uid://chr7bdkqhh84x" path="res://assets/textures/wall.png" id="3_diuyy"]
 [ext_resource type="PackedScene" uid="uid://doqo5pbf3my8g" path="res://Scenes/Assets/tree.tscn" id="8_63gne"]
@@ -50,10 +47,6 @@
 [ext_resource type="PackedScene" uid="uid://umhsll26co8b" path="res://Scenes/Assets/crates_and_barrels_2.tscn" id="23_d71cd"]
 [ext_resource type="PackedScene" uid="uid://w0fhuv203ry1" path="res://Scenes/Assets/crates_and_barrels_3_big.tscn" id="24_ev8wh"]
 [ext_resource type="PackedScene" uid="uid://bc0q5hij14mpp" path="res://Scenes/Assets/crates_and_barrels_big.tscn" id="25_sg1k1"]
-<<<<<<< HEAD
-=======
-[ext_resource type="PackedScene" uid="uid://es8k8ay1w7lu" path="res://assets/snow_globe/Snow_globe.glb" id="26_o6ptf"]
->>>>>>> origin
 [ext_resource type="PackedScene" uid="uid://b2qm0fu5dcqpn" path="res://Scenes/Assets/lathes.tscn" id="28_2v313"]
 [ext_resource type="PackedScene" uid="uid://b6i2y2wg3vraf" path="res://Scenes/Assets/paint_station.tscn" id="31_t4l3a"]
 [ext_resource type="PackedScene" uid="uid://dqviq4f5sfwpi" path="res://assets/candy_canes/Candy_canes.glb" id="32_2nteh"]
@@ -70,11 +63,8 @@
 [ext_resource type="PackedScene" uid="uid://bobht47xferue" path="res://assets/walls_assets/momma_texture.glb" id="40_wfamp"]
 [ext_resource type="PackedScene" uid="uid://dfrwqafmaq23y" path="res://assets/walls_assets/Design_a_dark_festiv.glb" id="41_uxxuj"]
 [ext_resource type="PackedScene" uid="uid://xw6ocivtd7cd" path="res://assets/walls_assets/Factory_Name_A.glb" id="46_livvk"]
-<<<<<<< HEAD
 [ext_resource type="PackedScene" uid="uid://bmsyipc8q1aqg" path="res://Scenes/elf.tscn" id="47_i3yam"]
 [ext_resource type="PackedScene" uid="uid://blcb7mtdv687p" path="res://Scenes/Enemy.tscn" id="48_5v382"]
-=======
->>>>>>> origin
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -122,14 +112,6 @@ shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_a4xvc")
-
-[node name="Sound" type="Node3D" parent="."]
-
-[node name="Chased" type="AudioStreamPlayer3D" parent="Sound"]
-stream = ExtResource("1_c3igu")
-
-[node name="Heyo" type="AudioStreamPlayer3D" parent="Sound"]
-stream = ExtResource("2_b2e8s")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_h87mb")
@@ -523,12 +505,6 @@ transform = Transform3D(0.843391, 0, 0.5373, 0, 1, 0, -0.5373, 0, 0.843391, -7.8
 [node name="Crates_and_barrels3_BIG3" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("24_ev8wh")]
 transform = Transform3D(-0.93358, 0, 0.358368, 0, 1, 0, -0.358368, 0, -0.93358, -9.96205, 1.61562, -7.70264)
 
-<<<<<<< HEAD
-=======
-[node name="Snow_globe" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("26_o6ptf")]
-transform = Transform3D(-0.0853854, 0, 0.0416453, 0, 0.095, 0, -0.0416453, 0, -0.0853854, -5.716, 1.639, -2.986)
-
->>>>>>> origin
 [node name="Tree" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("8_63gne")]
 transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.843, -1.03, 24.271)
 
@@ -673,7 +649,6 @@ transform = Transform3D(0.771625, 0, 0.636078, 0, 1, 0, -0.636078, 0, 0.771625, 
 [node name="Robot" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("20_l55pj")]
 transform = Transform3D(0.358368, 0, -0.93358, 0, 1, 0, 0.93358, 0, 0.358368, -14.548, -0.035, 10.609)
 
-<<<<<<< HEAD
 [node name="Player" parent="." groups=["player"] instance=ExtResource("22_8x0m7")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3142, 0.928315, -1.30094)
 
@@ -693,7 +668,3 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.90527, 1, -1.87631)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.6092, 1.41544, 7.14887)
 
 [node name="VisibleOnScreenNotifier3D" type="VisibleOnScreenNotifier3D" parent="Enemy"]
-=======
-[node name="Player" parent="." instance=ExtResource("22_8x0m7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3142, 0.928315, -1.30094)
->>>>>>> origin

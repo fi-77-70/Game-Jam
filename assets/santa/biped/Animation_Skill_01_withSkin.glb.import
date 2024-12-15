@@ -8,8 +8,8 @@ path="res://.godot/imported/Animation_Skill_01_withSkin.glb-8f764a22c2b8e21c194f
 
 [deps]
 
-source_file="res://assets/Santa/biped/Animation_Skill_01_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_Skill_01_withSkin.glb-8f764a22c2b8e21c194f8ae47f5f1e6b.scn"]
+source_file="res://assets/santa/biped/Animation_Skill_01_withSkin.glb"
+dest_files=["res://.godot/imported/Animation_Skill_01_withSkin.glb-916af64fb64d3e6267e18ed0d78eb4bf.scn"]
 
 [params]
 

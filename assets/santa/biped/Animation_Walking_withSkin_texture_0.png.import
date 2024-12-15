@@ -14,8 +14,8 @@ generator_parameters={
 
 [deps]
 
-source_file="res://assets/Santa/biped/Animation_Walking_withSkin_texture_0.png"
-dest_files=["res://.godot/imported/Animation_Walking_withSkin_texture_0.png-fc338721f99463756fc75319dab2c2e5.s3tc.ctex"]
+source_file="res://assets/santa/biped/Animation_Walking_withSkin_texture_0.png"
+dest_files=["res://.godot/imported/Animation_Walking_withSkin_texture_0.png-92304285916ca51d7b4ae425889ba23b.s3tc.ctex"]
 
 [params]
 

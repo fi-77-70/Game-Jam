@@ -8,8 +8,8 @@ path="res://.godot/imported/Animation_RunFast_withSkin.glb-9158cb80788e10434cec5
 
 [deps]
 
-source_file="res://assets/Santa/biped/Animation_RunFast_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_RunFast_withSkin.glb-9158cb80788e10434cec5166fb51ad2b.scn"]
+source_file="res://assets/santa/biped/Animation_RunFast_withSkin.glb"
+dest_files=["res://.godot/imported/Animation_RunFast_withSkin.glb-7575c0533d0b49369da0613b7cc73e23.scn"]
 
 [params]
 

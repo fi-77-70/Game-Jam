@@ -1,8 +1,7 @@
-[gd_scene load_steps=7 format=3 uid="uid://bmnbwqc35tsks"]
+[gd_scene load_steps=6 format=3 uid="uid://bmnbwqc35tsks"]
 
-[ext_resource type="PackedScene" uid="uid://cx5s0nnt8en6k" path="res://assets/ElfBoss/biped/Animation_Walking_withSkin.glb" id="1_jub81"]
+[ext_resource type="PackedScene" uid="uid://5geoampkun2n" path="res://assets/ElfBoss/biped/Animation_Walking_withSkin.glb" id="1_jub81"]
 [ext_resource type="Script" path="res://Scenes/elf_boss.gd" id="1_p8ec1"]
-[ext_resource type="PackedScene" uid="uid://d0sqj4qoxpfro" path="res://Scenes/cone.tscn" id="2_ehhou"]
 [ext_resource type="AudioStream" uid="uid://b2shsml4of6so" path="res://assets/sound/elf_boss_scream.wav" id="4_y5fp2"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_lpcnk"]
@@ -25,16 +24,15 @@ transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.001
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0032959, 0.85318, 0)
 shape = SubResource("BoxShape3D_lpcnk")
 
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="RigidBody3D"]
+
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0.725249, 0)
-spot_range = 10.0
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.725249, 0)
+spot_range = 4.5
+spot_angle = 26.82
 
 [node name="FOV" type="Area3D" parent="."]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 0)
-
-[node name="Cone" parent="FOV" instance=ExtResource("2_ehhou")]
-transform = Transform3D(5, 0, 0, 0, -2.18557e-07, 5, 0, -5, -2.18557e-07, 0, 0.725435, 5.12405)
-visible = false
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="FOV"]
 transform = Transform3D(2.5, 0, 0, 0, -1.09278e-07, 2.5, 0, -2.5, -1.09278e-07, 0, 0.725435, 2.5719)

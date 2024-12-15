@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d31cyb28u5ib8"]
+[gd_scene load_steps=6 format=3 uid="uid://d31cyb28u5ib8"]
 
 [ext_resource type="Script" path="res://Scripts/controller.gd" id="1_pd50x"]
 [ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="2_dkcx8"]
+[ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="3_0jlh2"]
+[ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="4_yt1lc"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qqkou"]
 radius = 0.1
@@ -11,6 +13,9 @@ radial_segments = 30
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_1m2al"]
 radius = 0.184736
 height = 0.509783
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_5545u"]
+size = Vector3(1.09888, 0.147217, 1.46118)
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_pd50x")
@@ -24,18 +29,26 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0654563, 0.498253, -0.00131
 shape = SubResource("CapsuleShape3D_1m2al")
 
 [node name="Node3D" type="Node3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.167214, 0.574818, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.575, 0)
 
 [node name="Camera3D" type="Camera3D" parent="Node3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0259064, -0.0205638, 0.0130253)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.021, 0.013)
 
 [node name="RayCast3D" type="RayCast3D" parent="Node3D/Camera3D"]
 target_position = Vector3(0, 0, -1)
 
 [node name="Lantern_01_1k" parent="." instance=ExtResource("2_dkcx8")]
-transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.252695, 0.464344, -0.11224)
+transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.152466, 0.451968, -0.11224)
 
 [node name="OmniLight3D" type="OmniLight3D" parent="Lantern_01_1k"]
 transform = Transform3D(1.3245, 0, 0, 0, 1.3245, 0, 0, 0, 1.3245, -0.0646932, 0.078846, 0.0107795)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Lantern_01_1k"]
+
+[node name="Area3D" type="Area3D" parent="."]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Area3D"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0223389, 0.534814, -0.358032)
+shape = SubResource("BoxShape3D_5545u")
+
+[connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]

@@ -8,8 +8,8 @@ path="res://.godot/imported/Animation_Walking_withSkin.glb-59d07f91c84e32d7d11af
 
 [deps]
 
-source_file="res://assets/Santa/biped/Animation_Walking_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-59d07f91c84e32d7d11af154bdc9d983.scn"]
+source_file="res://assets/santa/biped/Animation_Walking_withSkin.glb"
+dest_files=["res://.godot/imported/Animation_Walking_withSkin.glb-4c2eb60fc26a8c067af963fc3199aabe.scn"]
 
 [params]
 

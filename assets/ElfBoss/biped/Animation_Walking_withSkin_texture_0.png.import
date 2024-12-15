@@ -2,8 +2,12 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bmix02nekk1c4"
-valid=false
+uid="uid://cbld10g8wbfrf"
+path.s3tc="res://.godot/imported/Animation_Walking_withSkin_texture_0.png-df67bc27635f41b458a48f9f381037e9.s3tc.ctex"
+metadata={
+"imported_formats": ["s3tc_bptc"],
+"vram_texture": true
+}
 generator_parameters={
 "md5": "47b9ce15f52b337709605e05a3136442"
 }
@@ -11,6 +15,7 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ElfBoss/biped/Animation_Walking_withSkin_texture_0.png"
+dest_files=["res://.godot/imported/Animation_Walking_withSkin_texture_0.png-df67bc27635f41b458a48f9f381037e9.s3tc.ctex"]
 
 [params]
 
