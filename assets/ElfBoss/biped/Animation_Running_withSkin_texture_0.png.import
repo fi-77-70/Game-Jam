@@ -3,11 +3,7 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bm41n1n08amms"
-path.s3tc="res://.godot/imported/Animation_Running_withSkin_texture_0.png-edef425dbcdfe2e59e11dfddef27408c.s3tc.ctex"
-metadata={
-"imported_formats": ["s3tc_bptc"],
-"vram_texture": true
-}
+valid=false
 generator_parameters={
 "md5": "47b9ce15f52b337709605e05a3136442"
 }
@@ -15,7 +11,6 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/ElfBoss/biped/Animation_Running_withSkin_texture_0.png"
-dest_files=["res://.godot/imported/Animation_Running_withSkin_texture_0.png-edef425dbcdfe2e59e11dfddef27408c.s3tc.ctex"]
 
 [params]
 
