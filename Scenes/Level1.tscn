@@ -26,6 +26,9 @@
 [ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="22_8x0m7"]
 [ext_resource type="PackedScene" uid="uid://blcb7mtdv687p" path="res://Scenes/Enemy.tscn" id="23_b80l4"]
 [ext_resource type="PackedScene" uid="uid://bmnbwqc35tsks" path="res://Scenes/elf_boss.tscn" id="24_j1qmi"]
+<<<<<<< HEAD
+>>>>>>> 237c3b70fc1cfd86766977bc80ddf3c7446bef86
+=======
 >>>>>>> 237c3b70fc1cfd86766977bc80ddf3c7446bef86
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
