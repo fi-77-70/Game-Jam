@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cc45xmw4y86ig"]
+[gd_scene load_steps=57 format=3 uid="uid://cc45xmw4y86ig"]
 
 [ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="1_c3igu"]
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="1_vwx7u"]
@@ -16,12 +16,37 @@
 [ext_resource type="PackedScene" uid="uid://04qmy3v21nbx" path="res://assets/Tools/Hand_Drill/vintage_hand_drill_1k.gltf" id="14_np4nb"]
 [ext_resource type="PackedScene" uid="uid://db7pl7cujbhgg" path="res://assets/Tools/screwdiver/flathead_screwdriver_1k.gltf" id="15_5jjep"]
 [ext_resource type="PackedScene" uid="uid://cp8u5xnaxnrec" path="res://Scenes/Assets/door.tscn" id="16_7d8np"]
+[ext_resource type="PackedScene" uid="uid://dngf8vr0c7uh7" path="res://Scenes/Assets/sleight.tscn" id="17_ptwrm"]
+[ext_resource type="PackedScene" uid="uid://m2t2m6rolnyx" path="res://Scenes/Assets/gateway.tscn" id="18_s4mnn"]
+[ext_resource type="PackedScene" uid="uid://b504kqxd1ltnd" path="res://Scenes/Assets/stamping_press.tscn" id="19_3bvj7"]
 [ext_resource type="PackedScene" uid="uid://cchloxstnn1x5" path="res://assets/Tools/Present/Single_Christmas_pres_1214083342_texture.glb" id="19_n42mh"]
+[ext_resource type="PackedScene" uid="uid://cbljtlndfee4k" path="res://assets/broken_toys/Broken_toys.glb" id="20_65761"]
 [ext_resource type="PackedScene" uid="uid://b77uxpeydlh2w" path="res://Scenes/Assets/present_pile.tscn" id="20_bkqal"]
 [ext_resource type="PackedScene" uid="uid://bqmgavi68ds6p" path="res://Scenes/Assets/robot.tscn" id="20_l55pj"]
 [ext_resource type="PackedScene" uid="uid://cc5wn6hurdtw6" path="res://assets/Hat/Christmas_Santa_s_Hat_1214091135.glb" id="20_oa1ds"]
+[ext_resource type="PackedScene" uid="uid://ud6ahp2xodk3" path="res://Scenes/Assets/crates_and_barrels_1.tscn" id="21_xh3t2"]
 [ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="22_8x0m7"]
-[ext_resource type="PackedScene" uid="uid://blcb7mtdv687p" path="res://Scenes/Enemy.tscn" id="23_b80l4"]
+[ext_resource type="PackedScene" uid="uid://cywyiw0jetmgd" path="res://assets/crates_toys/Toy_prototypes_1.glb" id="22_x6jou"]
+[ext_resource type="PackedScene" uid="uid://umhsll26co8b" path="res://Scenes/Assets/crates_and_barrels_2.tscn" id="23_d71cd"]
+[ext_resource type="PackedScene" uid="uid://w0fhuv203ry1" path="res://Scenes/Assets/crates_and_barrels_3_big.tscn" id="24_ev8wh"]
+[ext_resource type="PackedScene" uid="uid://bc0q5hij14mpp" path="res://Scenes/Assets/crates_and_barrels_big.tscn" id="25_sg1k1"]
+[ext_resource type="PackedScene" uid="uid://es8k8ay1w7lu" path="res://assets/snow_globe/Snow_globe.glb" id="26_o6ptf"]
+[ext_resource type="PackedScene" uid="uid://b2qm0fu5dcqpn" path="res://Scenes/Assets/lathes.tscn" id="28_2v313"]
+[ext_resource type="PackedScene" uid="uid://b6i2y2wg3vraf" path="res://Scenes/Assets/paint_station.tscn" id="31_t4l3a"]
+[ext_resource type="PackedScene" uid="uid://dqviq4f5sfwpi" path="res://assets/candy_canes/Candy_canes.glb" id="32_2nteh"]
+[ext_resource type="PackedScene" uid="uid://bkjtskgx438pp" path="res://assets/clocks/Clocks.glb" id="33_t0boc"]
+[ext_resource type="PackedScene" uid="uid://3y3mj8e8pyjc" path="res://assets/desk/desk.glb" id="34_gq5bn"]
+[ext_resource type="PackedScene" uid="uid://chxgis6db8wwf" path="res://assets/walls_assets/Animated_Wall_Panel.glb" id="35_hkw4s"]
+[ext_resource type="PackedScene" uid="uid://cral4doi0u88t" path="res://assets/walls_assets/_Only_elf_wall_sign.glb" id="36_07g5k"]
+[ext_resource type="PackedScene" uid="uid://dn8115jrtobn7" path="res://assets/walls_assets/_Painting_zone.glb" id="37_fw5ps"]
+[ext_resource type="PackedScene" uid="uid://lpne3rxn51t3" path="res://Scenes/Assets/candy_cane_pillars.tscn" id="37_k8y4j"]
+[ext_resource type="PackedScene" uid="uid://uy2j2yt3kpwh" path="res://Scenes/Assets/kids_car_mechanic.tscn" id="38_2g4nr"]
+[ext_resource type="PackedScene" uid="uid://dv8nla2r2bbn7" path="res://assets/walls_assets/_Production_Zone.glb" id="38_p51dx"]
+[ext_resource type="PackedScene" uid="uid://b0jc1hdgcg7ey" path="res://assets/walls_assets/Pipes_and_Tubes.glb" id="39_fxoqt"]
+[ext_resource type="PackedScene" uid="uid://bb1fvudcl173q" path="res://assets/walls_assets/Icicle_Decorations.glb" id="39_qsasb"]
+[ext_resource type="PackedScene" uid="uid://bobht47xferue" path="res://assets/walls_assets/momma_texture.glb" id="40_wfamp"]
+[ext_resource type="PackedScene" uid="uid://dfrwqafmaq23y" path="res://assets/walls_assets/Design_a_dark_festiv.glb" id="41_uxxuj"]
+[ext_resource type="PackedScene" uid="uid://xw6ocivtd7cd" path="res://assets/walls_assets/Factory_Name_A.glb" id="46_livvk"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -285,6 +310,15 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.8285
 [node name="Table6" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_4elne")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 7.829, 0, -6.3287)
 
+[node name="Table7" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_4elne")]
+transform = Transform3D(0.515038, 0, 0.857167, 0, 1, 0, -0.857167, 0, 0.515038, -4.734, 0, -1.677)
+
+[node name="Table8" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_4elne")]
+transform = Transform3D(0.317305, 0, 0.948324, 0, 1, 0, -0.948324, 0, 0.317305, -4.865, 0, -0.0225199)
+
+[node name="Table9" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_4elne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.618, 0, -11.878)
+
 [node name="Chairs" type="Node3D" parent="NavigationRegion3D/Assets/Workshop"]
 
 [node name="Chair" parent="NavigationRegion3D/Assets/Workshop/Chairs" instance=ExtResource("12_pfn4g")]
@@ -321,7 +355,79 @@ transform = Transform3D(0.0197035, 0.999806, 0, -0.999806, 0.0197035, 0, 0, 0, 1
 [node name="Screwdriver2" parent="NavigationRegion3D/Assets/Workshop/Tools" instance=ExtResource("15_5jjep")]
 transform = Transform3D(-0.0255256, 0.0327232, 0.999138, -0.999581, 0.0128041, -0.0259563, -0.0136424, -0.999382, 0.0323826, 1.92744, 1.5642, -1.61515)
 
+[node name="wooden_hammer_01_1k" parent="NavigationRegion3D/Assets/Workshop/Tools" instance=ExtResource("13_khxh3")]
+transform = Transform3D(0.857167, -0.515038, -3.7468e-08, -4.37114e-08, 1.91069e-15, -1, 0.515038, 0.857167, -2.2513e-08, -5.65724, 1.55469, -3.42617)
+
+[node name="vintage_hand_drill_1k" parent="NavigationRegion3D/Assets/Workshop/Tools" instance=ExtResource("14_np4nb")]
+transform = Transform3D(0.782608, -0.622515, -3.42089e-08, -4.37114e-08, 1.91069e-15, -1, 0.622515, 0.782608, -2.7211e-08, -5.82517, 1.55204, -2.61905)
+
 [node name="Door" parent="NavigationRegion3D/Assets/Workshop" instance=ExtResource("16_7d8np")]
+
+[node name="TOYS" type="Node3D" parent="NavigationRegion3D/Assets/Workshop"]
+
+[node name="Toy_prototypes_1" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("22_x6jou")]
+transform = Transform3D(-0.0319789, 0, -0.242904, 0, 0.245, 0, 0.242904, 0, -0.0319789, -4.63791, 1.69284, -5.11675)
+
+[node name="Toy_prototypes_2" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("22_x6jou")]
+transform = Transform3D(0.172073, 0, 0.245746, 0, 0.3, 0, -0.245746, 0, 0.172073, -5.12008, 1.71699, -4.45592)
+
+[node name="Crates_and_barrels_2" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("23_d71cd")]
+transform = Transform3D(0.956305, 0, -0.292372, 0, 1, 0, 0.292372, 0, 0.956305, 0.472665, 1.23685, -0.686089)
+
+[node name="Crates_and_barrels_BIG" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("25_sg1k1")]
+transform = Transform3D(0.649448, 0, 0.760406, 0, 1, 0, -0.760406, 0, 0.649448, -0.960817, 1.43587, 1.56016)
+
+[node name="Broken_toys" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("20_65761")]
+transform = Transform3D(0.405, 0, 0, 0, 0.405, 0, 0, 0, 0.405, -4.2447, 1.72129, -13.6414)
+
+[node name="Crates_and_barrels" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("21_xh3t2")]
+transform = Transform3D(0.803857, 0, -0.594823, 0, 1, 0, 0.594823, 0, 0.803857, -2.89765, 1.2386, -8.28178)
+
+[node name="Robot" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("20_l55pj")]
+
+[node name="Crates_and_barrels3_BIG" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("24_ev8wh")]
+transform = Transform3D(-0.366501, 0, 0.930418, 0, 1, 0, -0.930418, 0, -0.366501, 1.59926, 1.62741, 1.72069)
+
+[node name="Robot2" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("20_l55pj")]
+transform = Transform3D(-0.87462, 0, 0.48481, 0, 1, 0, -0.48481, 0, -0.87462, 6.575, -0.005, -19.446)
+
+[node name="Kids_car_mechanic" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("38_2g4nr")]
+transform = Transform3D(0.398749, 0, -0.91706, 0, 1, 0, 0.91706, 0, 0.398749, 1.00666, 1.48099, 3.22709)
+
+[node name="presents_pile" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("20_bkqal")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.57199, 1.4419, 5.34813)
+
+[node name="Crates_and_barrels3_BIG2" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("24_ev8wh")]
+transform = Transform3D(0.798636, 0, -0.601815, 0, 1, 0, 0.601815, 0, 0.798636, 4.91136, 1.75693, 9.63035)
+
+[node name="Kids_car_mechanic2" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("38_2g4nr")]
+transform = Transform3D(0.843391, 0, 0.5373, 0, 1, 0, -0.5373, 0, 0.843391, -7.85758, 1.45807, -10.6233)
+
+[node name="Crates_and_barrels3_BIG3" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("24_ev8wh")]
+transform = Transform3D(-0.93358, 0, 0.358368, 0, 1, 0, -0.358368, 0, -0.93358, -9.96205, 1.61562, -7.70264)
+
+[node name="Snow_globe" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("26_o6ptf")]
+transform = Transform3D(-0.0853854, 0, 0.0416453, 0, 0.095, 0, -0.0416453, 0, -0.0853854, -5.716, 1.639, -2.986)
+
+[node name="Tree" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("8_63gne")]
+transform = Transform3D(2, 0, 0, 0, 2, 0, 0, 0, 2, -19.843, -1.03, 24.271)
+
+[node name="Crates_and_barrels3_BIG4" parent="NavigationRegion3D/Assets/Workshop/TOYS" instance=ExtResource("24_ev8wh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.90161, 1.63351, 0.14836)
+
+[node name="WallAssets" type="Node3D" parent="NavigationRegion3D/Assets/Workshop"]
+
+[node name="Candy_Cane_Pillars" parent="NavigationRegion3D/Assets/Workshop/WallAssets" instance=ExtResource("37_k8y4j")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -13.3111, 2.36742, -4.12664)
+
+[node name="Pipes_and_Tubes" parent="NavigationRegion3D/Assets/Workshop/WallAssets" instance=ExtResource("39_fxoqt")]
+transform = Transform3D(-2.36916e-07, 0, 5.42, 0, 5.42, 0, -5.42, 0, -2.36916e-07, -13.8867, 2.44674, 5.08402)
+
+[node name="Factory_Name_A" parent="NavigationRegion3D/Assets/Workshop/WallAssets" instance=ExtResource("46_livvk")]
+transform = Transform3D(1.95, 0, 0, 0, 1.95, 0, 0, 0, 1.95, 2.98762, 3.68089, 14.0281)
+
+[node name="Christmas_Santa_s_Hat_1214091135" parent="NavigationRegion3D/Assets/Workshop/WallAssets" instance=ExtResource("20_oa1ds")]
+transform = Transform3D(-0.104241, 0, -0.227231, 0, 0.25, 0, 0.227231, 0, -0.104241, 7.34599, 3.96445, 6.41169)
 
 [node name="Presents" type="Node3D" parent="NavigationRegion3D/Assets"]
 
@@ -340,13 +446,112 @@ transform = Transform3D(-1.68442, 0, 0.9725, 0, 1.945, 0, -0.9725, 0, -1.68442, 
 [node name="presents_pile2" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("20_bkqal")]
 transform = Transform3D(1.805, 0, 0, 0, 1.805, 0, 0, 0, 1.805, 0, 1.85029, -13.524)
 
-[node name="Christmas_Santa_s_Hat_1214091135" parent="NavigationRegion3D/Assets" instance=ExtResource("20_oa1ds")]
-transform = Transform3D(-0.104241, 0, -0.227231, 0, 0.25, 0, 0.227231, 0, -0.104241, 7.34599, 3.96445, 6.41169)
+[node name="presents_pile3" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("20_bkqal")]
+transform = Transform3D(-0.544639, 0, 0.838671, 0, 1, 0, -0.838671, 0, -0.544639, -12.5573, 1.57909, 12.5357)
 
-[node name="Robot" parent="NavigationRegion3D/Assets" instance=ExtResource("20_l55pj")]
+[node name="Machines" type="Node3D" parent="NavigationRegion3D/Assets"]
 
-[node name="Enemy" parent="." instance=ExtResource("23_b80l4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0891, 1.53274, 0)
+[node name="Stamping_press" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("19_3bvj7")]
+transform = Transform3D(-0.559193, 0, -0.829038, 0, 1, 0, 0.829038, 0, -0.559193, -6.22144, 2.17632, -1.18966)
+
+[node name="Lathes" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("28_2v313")]
+transform = Transform3D(0.358368, 0, -0.93358, 0, 1, 0, 0.93358, 0, 0.358368, -5.61505, 1.64064, 1.40754)
+
+[node name="Lathes2" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("28_2v313")]
+transform = Transform3D(0.993572, 0, -0.113203, 0, 1, 0, 0.113203, 0, 0.993572, -3.99565, 1.63547, 2.24392)
+
+[node name="sleight" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("17_ptwrm")]
+transform = Transform3D(0.707107, 0, 0.707107, 0, 1, 0, -0.707107, 0, 0.707107, -12.1412, 2.09667, -12.3127)
+
+[node name="gateway" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("18_s4mnn")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -3.44956, 2.00122, 13.4324)
+
+[node name="Stamping_presses_1215024814_texture" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("19_3bvj7")]
+transform = Transform3D(1.19249e-08, 0, -1, 0, 1, 0, 1, 0, 1.19249e-08, -3.1648, 2.21257, -6.69344)
+
+[node name="Paint_station" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("31_t4l3a")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.84602, 1.71229, 12.0065)
+
+[node name="Paint_station2" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("31_t4l3a")]
+transform = Transform3D(-0.996195, 0, 0.0871556, 0, 1, 0, -0.0871556, 0, -0.996195, 1.04199, 1.70358, 12.5729)
+
+[node name="Crates_and_barrels3_BIG" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("24_ev8wh")]
+transform = Transform3D(0.920505, 0, -0.390731, 0, 1, 0, 0.390731, 0, 0.920505, -11.512, 1.59925, 10.7196)
+
+[node name="Crates_and_barrels_BIG" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("25_sg1k1")]
+transform = Transform3D(-0.5, 0, -0.866025, 0, 1, 0, 0.866025, 0, -0.5, 4.04736, 1.45718, 12.7677)
+
+[node name="Tree" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("8_63gne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -21.932, -0.04, 5.613)
+
+[node name="Table" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("11_4elne")]
+transform = Transform3D(0.95882, 0, -0.284015, 0, 1, 0, 0.284015, 0, 0.95882, -4.92512, -0.04, 3.44136)
+
+[node name="Candy_canes" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("32_2nteh")]
+transform = Transform3D(-0.254913, -0.00667512, 1.11426e-08, -1.11464e-08, 4.87225e-16, -0.255, 0.00667512, -0.254913, -2.91779e-10, -2.20844, 1.51469, 2.43845)
+
+[node name="Clocks" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("33_t0boc")]
+transform = Transform3D(1.995, 0, 0, 0, 1.995, 0, 0, 0, 1.995, -10.7969, 3.35217, 14)
+
+[node name="desk" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("34_gq5bn")]
+transform = Transform3D(0.626717, 0, 1.59101, 0, 1.71, 0, -1.59101, 0, 0.626717, 9.83385, 1.72507, 11.303)
+
+[node name="Chair" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("12_pfn4g")]
+transform = Transform3D(-0.916265, 0, -2.15858, 0, 2.345, 0, 2.15858, 0, -0.916265, 8.74, -1.41, 4.01)
+
+[node name="Animated_Wall_Panel" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("35_hkw4s")]
+transform = Transform3D(2.02, 0, 0, 0, 2.02, 0, 0, 0, 2.02, -9.31145, 3.68152, -13.745)
+
+[node name="_Only_elf_wall_sign" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("36_07g5k")]
+transform = Transform3D(-2.29485e-08, 0, -0.525, 0, 0.525, 0, 0.525, 0, -2.29485e-08, 6.97373, 3.35195, 1.13121)
+
+[node name="_Painting_zone" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("37_fw5ps")]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, -0.13258, 2.99579, 13.9995)
+
+[node name="_Production_Zone" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("38_p51dx")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.82631, 4.03993, -14)
+
+[node name="Icicle_Decorations" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("39_qsasb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.40628, 4.13912, -14.0421)
+
+[node name="Icicle_Decorations2" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("39_qsasb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.434688, 4.0986, -14)
+
+[node name="Icicle_Decorations3" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("39_qsasb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.53217, 4.1299, -14)
+
+[node name="Icicle_Decorations4" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("39_qsasb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.54022, 4.17034, -14)
+
+[node name="Icicle_Decorations5" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("39_qsasb")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.51773, 4.1749, -14.0032)
+
+[node name="Icicle_Decorations6" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("39_qsasb")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14, 3.97939, -9.22674)
+
+[node name="Icicle_Decorations7" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("39_qsasb")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -14, 4.01972, -11.1954)
+
+[node name="momma_texture" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("40_wfamp")]
+transform = Transform3D(-3.56248e-08, 0, -0.815, 0, 0.815, 0, 0.815, 0, -3.56248e-08, 6.46772, 1.89079, -0.334891)
+
+[node name="Design_a_dark_festiv" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("41_uxxuj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.86453, 2.5496, -13.8203)
+
+[node name="Tree2" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("8_63gne")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.78, -0.166, 17.116)
+
+[node name="Crates_and_barrels" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("21_xh3t2")]
+transform = Transform3D(0.649448, 0, -0.760406, 0, 1, 0, 0.760406, 0, 0.649448, 13.2242, 1.30112, -9.17995)
+
+[node name="Crates_and_barrels3_BIG2" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("24_ev8wh")]
+transform = Transform3D(0.760406, 0, -0.649448, 0, 1, 0, 0.649448, 0, 0.760406, -7.12433, 1.64861, 7.00732)
+
+[node name="Kids_car_mechanic" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("38_2g4nr")]
+transform = Transform3D(0.771625, 0, 0.636078, 0, 1, 0, -0.636078, 0, 0.771625, -7.50325, 1.461, 3.356)
+
+[node name="Robot" parent="NavigationRegion3D/Assets/Machines" instance=ExtResource("20_l55pj")]
+transform = Transform3D(0.358368, 0, -0.93358, 0, 1, 0, 0.93358, 0, 0.358368, -14.548, -0.035, 10.609)
 
 [node name="Player" parent="." instance=ExtResource("22_8x0m7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00712, 1, 2.62642)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.3142, 0.928315, -1.30094)

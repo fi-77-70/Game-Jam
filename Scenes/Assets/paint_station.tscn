@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://b6i2y2wg3vraf"]
+
+[ext_resource type="PackedScene" uid="uid://dh6pudkwwdfp3" path="res://assets/paint_station/Paint_station.glb" id="1_f27o5"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_2ntn2"]
+size = Vector3(2.12952, 1.25293, 1.70065)
+
+[node name="Paint_station" instance=ExtResource("1_f27o5")]
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0459595, -0.126465, -0.0131797)
+shape = SubResource("BoxShape3D_2ntn2")

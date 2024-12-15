@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://ud6ahp2xodk3"]
+
+[ext_resource type="PackedScene" uid="uid://ttbcv4mhray5" path="res://assets/crates_toys/Crates_and_barrels.glb" id="1_eu66t"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_aflya"]
+size = Vector3(1, 0.764771, 1)
+
+[node name="Crates_and_barrels" instance=ExtResource("1_eu66t")]
+
+[node name="Mesh" parent="." index="0"]
+transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0, 0)
+
+[node name="RigidBody3D" type="RigidBody3D" parent="." index="1"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.117615, 0)
+shape = SubResource("BoxShape3D_aflya")
