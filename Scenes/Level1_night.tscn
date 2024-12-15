@@ -184,15 +184,16 @@ surface_material_override/0 = SubResource("StandardMaterial3D_g0vm7")
 [node name="Workshop" type="Node3D" parent="NavigationRegion3D/Assets"]
 
 [node name="Tables" type="Node3D" parent="NavigationRegion3D/Assets/Workshop"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.821782, 0, -1.01425)
 
 [node name="Table" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.531, 1.551, -0.054)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.3855, 1.551, -0.054)
 
 [node name="Table2" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.585, 1.51, -1.799)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4311, 1.51, -1.799)
 
 [node name="Table3" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 8.547, 1.53, -10.457)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 10.4774, 1.53, -10.457)
 
 [node name="Table4" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0.661, 1.542, -4.052)
@@ -204,22 +205,22 @@ transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -0.938
 transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -5.95422, 1.544, -15.7169)
 
 [node name="Table7" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(-0.838671, 0, 0.544639, 0, 1, 0, -0.544639, 0, -0.838671, -4.57657, 1.37086, -8.4315)
+transform = Transform3D(-0.838671, 0, 0.544639, 0, 1, 0, -0.544639, 0, -0.838671, -5.09655, 1.37086, -7.33265)
 
 [node name="Table8" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.048, 1.513, -5.234)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -8.048, 1.513, -5.32785)
 
 [node name="Table9" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(-0.878817, 0, 0.477159, 0, 1, 0, -0.477159, 0, -0.878817, -7.879, 1.536, -3.059)
+transform = Transform3D(-0.878817, 0, 0.477159, 0, 1, 0, -0.477159, 0, -0.878817, -8.785, 1.536, -2.514)
 
 [node name="Table10" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(0.515038, 0, 0.857167, 0, 1, 0, -0.857167, 0, 0.515038, -3.75517, 1.548, -0.211408)
+transform = Transform3D(0.515038, 0, 0.857167, 0, 1, 0, -0.857167, 0, 0.515038, -2.76069, 1.548, -0.521148)
 
 [node name="Table11" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(0.317305, 0, 0.948324, 0, 1, 0, -0.948324, 0, 0.317305, -2.80697, 1.44, 0.643928)
+transform = Transform3D(0.317305, 0, 0.948324, 0, 1, 0, -0.948324, 0, 0.317305, -2.01271, 1.44, 0.291528)
 
 [node name="Table12" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
-transform = Transform3D(0.894934, 0, -0.446198, 0, 1, 0, 0.446198, 0, 0.894934, -1.42998, 1.48603, -5.10168)
+transform = Transform3D(0.819152, 0, -0.573576, 0, 1, 0, 0.573576, 0, 0.819152, 0.344724, 1.48603, -4.06847)
 
 [node name="Table13" parent="NavigationRegion3D/Assets/Workshop/Tables" instance=ExtResource("11_quunm")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.705, 1.54, -7.031)

@@ -1,18 +1,19 @@
 [gd_scene load_steps=3 format=3 uid="uid://cuh5e34n5asqi"]
 
-[ext_resource type="PackedScene" uid="uid://c6b1kr11updrx" path="res://assets/Table/WoodenTable_01_1k.gltf" id="1_hhc5g"]
+[ext_resource type="ArrayMesh" uid="uid://mlpshl1iyoov" path="res://assets/Table_low/newscene.obj" id="1_edq1i"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_qqqv7"]
-size = Vector3(1.78697, 1.05469, 0.652466)
+size = Vector3(1.57921, 0.63379, 0.652466)
 
 [node name="Table" type="Node3D"]
-
-[node name="Texture" parent="." instance=ExtResource("1_hhc5g")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0060041, 0.0273445, 0.00555444)
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -6.07575, -1.27608, 3.9661)
 shape = SubResource("BoxShape3D_qqqv7")
+
+[node name="Newscene" type="MeshInstance3D" parent="."]
+transform = Transform3D(0.003, 0, 0, 0, 0.003, 0, 0, 0, 0.003, -3.51678, 0, 2.28631)
+mesh = ExtResource("1_edq1i")
