@@ -10,7 +10,7 @@ generator_parameters={
 
 [deps]
 
-source_file="res://assets/santa/biped/Animation_RunFast_withSkin_texture_0.png"
+source_file="res://assets/Santa/biped/Animation_RunFast_withSkin_texture_0.png"
 
 [params]
 
