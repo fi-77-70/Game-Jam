@@ -145,3 +145,9 @@ func update_crouch(delta: float):
 	# Smoothly interpolate the height of the collision shape
 	capsule.height = lerp(capsule.height, target_height, CROUCH_TRANSITION_SPEED * delta)
 	capsule.radius = lerp(capsule.radius, original_radius * (CROUCH_HEIGH if is_crouching else NORMAL_HEIGH), CROUCH_TRANSITION_SPEED * delta)
+
+
+func _on_area_3d_body_entered(body: Node3D) -> void:
+	if body.is_in_group("enemys"):
+		get_tree().change_scene_to_file("res://Scenes/YouDied.tscn")
+	pass # Replace with function body.
