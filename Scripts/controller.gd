@@ -1,6 +1,7 @@
 extends CharacterBody3D
 
 @export var player_scene: PackedScene
+@onready var heyo = $Sound/Heyo
 
 # NORMAL CONTROLS INIT
 const JUMP_VELOCITY = 1.5
@@ -81,6 +82,8 @@ func _physics_process(delta: float) -> void:
 	move_and_slide()
 
 func _input(event):
+	if Input.is_action_just_pressed("play_heyo"):
+		heyo.play()
 	if event is InputEventMouseMotion:
 		rotate_y(deg_to_rad(-event.relative.x * MOUSE_SENSE))
 		rotation_x += -event.relative.y * MOUSE_SENSE

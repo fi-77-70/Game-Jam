@@ -1,8 +1,6 @@
-[gd_scene load_steps=57 format=3 uid="uid://cc45xmw4y86ig"]
+[gd_scene load_steps=55 format=3 uid="uid://cc45xmw4y86ig"]
 
-[ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="1_c3igu"]
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="1_vwx7u"]
-[ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="2_b2e8s"]
 [ext_resource type="Texture2D" uid="uid://doi5emy16fqjq" path="res://assets/textures/main_wall.png" id="2_bwpce"]
 [ext_resource type="Texture2D" uid="uid://chr7bdkqhh84x" path="res://assets/textures/wall.png" id="3_diuyy"]
 [ext_resource type="PackedScene" uid="uid://doqo5pbf3my8g" path="res://Scenes/Assets/tree.tscn" id="8_63gne"]
@@ -90,14 +88,6 @@ shadow_enabled = true
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_a4xvc")
-
-[node name="Sound" type="Node3D" parent="."]
-
-[node name="Chased" type="AudioStreamPlayer3D" parent="Sound"]
-stream = ExtResource("1_c3igu")
-
-[node name="Heyo" type="AudioStreamPlayer3D" parent="Sound"]
-stream = ExtResource("2_b2e8s")
 
 [node name="NavigationRegion3D" type="NavigationRegion3D" parent="."]
 navigation_mesh = SubResource("NavigationMesh_h87mb")

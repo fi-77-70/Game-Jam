@@ -1,7 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://d31cyb28u5ib8"]
+[gd_scene load_steps=7 format=3 uid="uid://d31cyb28u5ib8"]
 
 [ext_resource type="Script" path="res://Scripts/controller.gd" id="1_pd50x"]
 [ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="2_dkcx8"]
+[ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="3_0jlh2"]
+[ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="4_yt1lc"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qqkou"]
 radius = 0.1
@@ -39,3 +41,11 @@ transform = Transform3D(0.755, 0, 0, 0, 0.755, 0, 0, 0, 0.755, 0.252695, 0.46434
 transform = Transform3D(1.3245, 0, 0, 0, 1.3245, 0, 0, 0, 1.3245, -0.0646932, 0.078846, 0.0107795)
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Lantern_01_1k"]
+
+[node name="Sound" type="Node3D" parent="."]
+
+[node name="Chased" type="AudioStreamPlayer3D" parent="Sound"]
+stream = ExtResource("3_0jlh2")
+
+[node name="Heyo" type="AudioStreamPlayer3D" parent="Sound"]
+stream = ExtResource("4_yt1lc")

@@ -11,9 +11,13 @@ config_version=5
 [application]
 
 config/name="Christmas Terror"
-run/main_scene="res://Scenes/Level1.tscn"
+run/main_scene="res://Scenes/StartMenu.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
+
+[autoload]
+
+StartMenu="*res://Scenes/StartMenu.tscn"
 
 [dotnet]
 
