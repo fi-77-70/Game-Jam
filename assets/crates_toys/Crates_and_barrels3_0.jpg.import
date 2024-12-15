@@ -3,11 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bqd4sgnmewavd"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+valid=false
+=======
+>>>>>>> origin
 path.s3tc="res://.godot/imported/Crates_and_barrels3_0.jpg-99d7b5244ed8e7c4f4e96816637eecb2.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 generator_parameters={
 "md5": "530c1ff420e163888fc5d43aa01ddc47"
 }
@@ -15,7 +25,14 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/crates_toys/Crates_and_barrels3_0.jpg"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/Crates_and_barrels3_0.jpg-99d7b5244ed8e7c4f4e96816637eecb2.s3tc.ctex"]
+=======
+<<<<<<< HEAD
+=======
+dest_files=["res://.godot/imported/Crates_and_barrels3_0.jpg-99d7b5244ed8e7c4f4e96816637eecb2.s3tc.ctex"]
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 
 [params]
 

@@ -15,10 +15,13 @@ run/main_scene="res://Scenes/Level1.tscn"
 config/features=PackedStringArray("4.3", "Forward Plus")
 config/icon="res://icon.svg"
 
+<<<<<<< HEAD
 [autoload]
 
 GlobalManager="*res://Scripts/GlobalManager.gd"
 
+=======
+>>>>>>> origin
 [dotnet]
 
 project/assembly_name="Christmas Terror"
@@ -80,10 +83,13 @@ light={
 ]
 }
 
+<<<<<<< HEAD
 [navigation]
 
 3d/default_cell_height=0.0
 
+=======
+>>>>>>> origin
 [rendering]
 
 renderer/rendering_method="gl_compatibility"

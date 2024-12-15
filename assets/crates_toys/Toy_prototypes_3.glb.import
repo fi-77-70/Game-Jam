@@ -4,12 +4,27 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://vonnujc1gv7m"
+<<<<<<< HEAD
 path="res://.godot/imported/Toy_prototypes_3.glb-6dbbb76bfee7d432350cae9fb1dba20b.scn"
+=======
+<<<<<<< HEAD
+valid=false
+=======
+path="res://.godot/imported/Toy_prototypes_3.glb-6dbbb76bfee7d432350cae9fb1dba20b.scn"
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 
 [deps]
 
 source_file="res://assets/crates_toys/Toy_prototypes_3.glb"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/Toy_prototypes_3.glb-6dbbb76bfee7d432350cae9fb1dba20b.scn"]
+=======
+<<<<<<< HEAD
+=======
+dest_files=["res://.godot/imported/Toy_prototypes_3.glb-6dbbb76bfee7d432350cae9fb1dba20b.scn"]
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 
 [params]
 

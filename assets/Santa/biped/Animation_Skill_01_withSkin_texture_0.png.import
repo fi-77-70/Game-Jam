@@ -2,8 +2,13 @@
 
 importer="texture"
 type="CompressedTexture2D"
+<<<<<<< HEAD:assets/Santa/biped/Animation_Skill_01_withSkin_texture_0.png.import
 uid="uid://dwdgyhtuod2t5"
 path.s3tc="res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-e7728b0eae8a506c837cdd13d82a447d.s3tc.ctex"
+=======
+uid="uid://c5t1e2d6rgbt7"
+path.s3tc="res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-fe339da9960f83d212b45681805972c0.s3tc.ctex"
+>>>>>>> origin:assets/santa/biped/Animation_Skill_01_withSkin_texture_0.png.import
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
@@ -11,8 +16,8 @@ metadata={
 
 [deps]
 
-source_file="res://assets/Santa/biped/Animation_Skill_01_withSkin_texture_0.png"
-dest_files=["res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-e7728b0eae8a506c837cdd13d82a447d.s3tc.ctex"]
+source_file="res://assets/santa/biped/Animation_Skill_01_withSkin_texture_0.png"
+dest_files=["res://.godot/imported/Animation_Skill_01_withSkin_texture_0.png-fe339da9960f83d212b45681805972c0.s3tc.ctex"]
 
 [params]
 
