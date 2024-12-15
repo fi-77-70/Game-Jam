@@ -1,4 +1,4 @@
-[gd_scene load_steps=32 format=3 uid="uid://cc45xmw4y86ig"]
+[gd_scene load_steps=27 format=3 uid="uid://cc45xmw4y86ig"]
 
 [ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="1_c3igu"]
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="1_vwx7u"]
@@ -16,12 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://04qmy3v21nbx" path="res://assets/Tools/Hand_Drill/vintage_hand_drill_1k.gltf" id="14_np4nb"]
 [ext_resource type="PackedScene" uid="uid://db7pl7cujbhgg" path="res://assets/Tools/screwdiver/flathead_screwdriver_1k.gltf" id="15_5jjep"]
 [ext_resource type="PackedScene" uid="uid://cp8u5xnaxnrec" path="res://Scenes/Assets/door.tscn" id="16_7d8np"]
-[ext_resource type="PackedScene" uid="uid://cchloxstnn1x5" path="res://assets/Tools/Present/Single_Christmas_pres_1214083342_texture.glb" id="19_n42mh"]
-[ext_resource type="PackedScene" uid="uid://b77uxpeydlh2w" path="res://Scenes/Assets/present_pile.tscn" id="20_bkqal"]
-[ext_resource type="PackedScene" uid="uid://bqmgavi68ds6p" path="res://Scenes/Assets/robot.tscn" id="20_l55pj"]
-[ext_resource type="PackedScene" uid="uid://cc5wn6hurdtw6" path="res://assets/Hat/Christmas_Santa_s_Hat_1214091135.glb" id="20_oa1ds"]
-[ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="22_8x0m7"]
-[ext_resource type="PackedScene" uid="uid://blcb7mtdv687p" path="res://Scenes/Enemy.tscn" id="23_b80l4"]
+[ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="17_3bue2"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
 sky_horizon_color = Color(0.64625, 0.65575, 0.67075, 1)
@@ -325,28 +320,4 @@ transform = Transform3D(-0.0255256, 0.0327232, 0.999138, -0.999581, 0.0128041, -
 
 [node name="Presents" type="Node3D" parent="NavigationRegion3D/Assets"]
 
-[node name="Presents" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("19_n42mh")]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 6.19147, 1.79622, -8.31771)
-
-[node name="Presents3" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("19_n42mh")]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, -0.57901, 1.79622, -5.69524)
-
-[node name="Presents2" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("19_n42mh")]
-transform = Transform3D(0.25, 0, 0, 0, 0.25, 0, 0, 0, 0.25, 6.18991, 1.81418, 1.64552)
-
-[node name="presents_pile" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("20_bkqal")]
-transform = Transform3D(-1.68442, 0, 0.9725, 0, 1.945, 0, -0.9725, 0, -1.68442, 4.83579, 1.82093, 3.88004)
-
-[node name="presents_pile2" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("20_bkqal")]
-transform = Transform3D(1.805, 0, 0, 0, 1.805, 0, 0, 0, 1.805, 0, 1.85029, -13.524)
-
-[node name="Christmas_Santa_s_Hat_1214091135" parent="NavigationRegion3D/Assets" instance=ExtResource("20_oa1ds")]
-transform = Transform3D(-0.104241, 0, -0.227231, 0, 0.25, 0, 0.227231, 0, -0.104241, 7.34599, 3.96445, 6.41169)
-
-[node name="Robot" parent="NavigationRegion3D/Assets" instance=ExtResource("20_l55pj")]
-
-[node name="Enemy" parent="." instance=ExtResource("23_b80l4")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.0891, 1.53274, 0)
-
-[node name="Player" parent="." instance=ExtResource("22_8x0m7")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 6.00712, 1, 2.62642)
+[node name="Player" parent="." instance=ExtResource("17_3bue2")]
