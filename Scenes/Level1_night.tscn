@@ -539,7 +539,7 @@ transform = Transform3D(-1.68442, 0, 0.9725, 0, 1.945, 0, -0.9725, 0, -1.68442, 
 transform = Transform3D(1.805, 0, 0, 0, 1.805, 0, 0, 0, 1.805, 0, 1.85029, -13.524)
 
 [node name="presents_pile3" parent="NavigationRegion3D/Assets/Presents" instance=ExtResource("25_eluri")]
-transform = Transform3D(-0.544639, 0, 0.838671, 0, 1, 0, -0.838671, 0, -0.544639, -12.5573, 1.57909, 12.5357)
+transform = Transform3D(-0.544639, 0, 0.838671, 0, 1, 0, -0.838671, 0, -0.544639, -12.5573, 1.47275, 12.5357)
 
 [node name="Machines" type="Node3D" parent="NavigationRegion3D/Assets"]
 

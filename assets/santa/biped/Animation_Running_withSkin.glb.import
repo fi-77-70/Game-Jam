@@ -3,13 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://dusj400y1x7s0"
-path="res://.godot/imported/Animation_Running_withSkin.glb-d2061fb9c2b3e78321db09163c4bb46c.scn"
+uid="uid://bxu46j5s0xtwp"
+path="res://.godot/imported/Animation_Running_withSkin.glb-94cef1422c8fc18f5ceb8115af8893ed.scn"
 
 [deps]
 
-source_file="res://assets/santa/biped/Animation_Running_withSkin.glb"
-dest_files=["res://.godot/imported/Animation_Running_withSkin.glb-d2061fb9c2b3e78321db09163c4bb46c.scn"]
+source_file="res://assets/Santa/biped/Animation_Running_withSkin.glb"
+dest_files=["res://.godot/imported/Animation_Running_withSkin.glb-94cef1422c8fc18f5ceb8115af8893ed.scn"]
 
 [params]
 

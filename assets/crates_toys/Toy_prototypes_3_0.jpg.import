@@ -3,11 +3,21 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://7lcj8j4tyixr"
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+valid=false
+=======
+>>>>>>> origin
 path.s3tc="res://.godot/imported/Toy_prototypes_3_0.jpg-0e410f99d7698248618d41261caf67f9.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
+<<<<<<< HEAD
+=======
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 generator_parameters={
 "md5": "1e1bb2668b9b84281b3813d900a2c340"
 }
@@ -15,7 +25,14 @@ generator_parameters={
 [deps]
 
 source_file="res://assets/crates_toys/Toy_prototypes_3_0.jpg"
+<<<<<<< HEAD
 dest_files=["res://.godot/imported/Toy_prototypes_3_0.jpg-0e410f99d7698248618d41261caf67f9.s3tc.ctex"]
+=======
+<<<<<<< HEAD
+=======
+dest_files=["res://.godot/imported/Toy_prototypes_3_0.jpg-0e410f99d7698248618d41261caf67f9.s3tc.ctex"]
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
+>>>>>>> origin
 
 [params]
 
