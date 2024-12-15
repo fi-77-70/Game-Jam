@@ -4,11 +4,19 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://c5373kkl0kqhh"
+<<<<<<< HEAD
 valid=false
+=======
+path="res://.godot/imported/gateway.glb-a06fbbc02f5fb5a035fa0260c0955170.scn"
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
 
 [deps]
 
 source_file="res://assets/gateway/gateway.glb"
+<<<<<<< HEAD
+=======
+dest_files=["res://.godot/imported/gateway.glb-a06fbbc02f5fb5a035fa0260c0955170.scn"]
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
 
 [params]
 

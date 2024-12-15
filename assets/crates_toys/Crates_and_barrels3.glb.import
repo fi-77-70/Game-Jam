@@ -4,11 +4,19 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://dbrd2c6ybbfam"
+<<<<<<< HEAD
 valid=false
+=======
+path="res://.godot/imported/Crates_and_barrels3.glb-684234f33970888133013024eadb406c.scn"
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
 
 [deps]
 
 source_file="res://assets/crates_toys/Crates_and_barrels3.glb"
+<<<<<<< HEAD
+=======
+dest_files=["res://.godot/imported/Crates_and_barrels3.glb-684234f33970888133013024eadb406c.scn"]
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
 
 [params]
 

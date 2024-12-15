@@ -4,11 +4,19 @@ importer="scene"
 importer_version=1
 type="PackedScene"
 uid="uid://3y3mj8e8pyjc"
+<<<<<<< HEAD
 valid=false
+=======
+path="res://.godot/imported/desk.glb-18b0ce6d0c75b7112238d2a8b6d21a39.scn"
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
 
 [deps]
 
 source_file="res://assets/desk/desk.glb"
+<<<<<<< HEAD
+=======
+dest_files=["res://.godot/imported/desk.glb-18b0ce6d0c75b7112238d2a8b6d21a39.scn"]
+>>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
 
 [params]
 
