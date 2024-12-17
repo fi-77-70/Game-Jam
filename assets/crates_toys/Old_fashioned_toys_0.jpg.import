@@ -2,37 +2,17 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://b2slwgx45lygh"
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-valid=false
-=======
->>>>>>> origin
+uid="uid://cgeg2mhx0l6k3"
 path.s3tc="res://.godot/imported/Old_fashioned_toys_0.jpg-b10b7538c50d2d3195096757fc926cde.s3tc.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc"],
 "vram_texture": true
 }
-<<<<<<< HEAD
-=======
->>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
->>>>>>> origin
-generator_parameters={
-"md5": "98564884bd6d614f1259e0b3d18c084b"
-}
 
 [deps]
 
 source_file="res://assets/crates_toys/Old_fashioned_toys_0.jpg"
-<<<<<<< HEAD
 dest_files=["res://.godot/imported/Old_fashioned_toys_0.jpg-b10b7538c50d2d3195096757fc926cde.s3tc.ctex"]
-=======
-<<<<<<< HEAD
-=======
-dest_files=["res://.godot/imported/Old_fashioned_toys_0.jpg-b10b7538c50d2d3195096757fc926cde.s3tc.ctex"]
->>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
->>>>>>> origin
 
 [params]
 

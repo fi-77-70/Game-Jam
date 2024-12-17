@@ -3,28 +3,13 @@
 importer="scene"
 importer_version=1
 type="PackedScene"
-uid="uid://2q31jljbv30l"
-<<<<<<< HEAD
+uid="uid://ccjfuww1fs7tg"
 path="res://.godot/imported/Old_fashioned_toys.glb-86b9759bff3d938ac208fefc1adc1094.scn"
-=======
-<<<<<<< HEAD
-valid=false
-=======
-path="res://.godot/imported/Old_fashioned_toys.glb-86b9759bff3d938ac208fefc1adc1094.scn"
->>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
->>>>>>> origin
 
 [deps]
 
 source_file="res://assets/crates_toys/Old_fashioned_toys.glb"
-<<<<<<< HEAD
 dest_files=["res://.godot/imported/Old_fashioned_toys.glb-86b9759bff3d938ac208fefc1adc1094.scn"]
-=======
-<<<<<<< HEAD
-=======
-dest_files=["res://.godot/imported/Old_fashioned_toys.glb-86b9759bff3d938ac208fefc1adc1094.scn"]
->>>>>>> 0b6d01e8f899eac6335779f7327a62e47b92721b
->>>>>>> origin
 
 [params]
 
@@ -47,5 +32,5 @@ animation/remove_immutable_tracks=true
 animation/import_rest_as_RESET=false
 import_script/path=""
 _subresources={}
-gltf/naming_version=1
+gltf/naming_version=0
 gltf/embedded_image_handling=1

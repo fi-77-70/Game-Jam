@@ -14,4 +14,4 @@ func _on_animation_finished(anim_name):
 	if anim_name == "fade_to_black":
 		menu.visible = false
 		animation_player.play("fade_to_normal")
-		get_tree().change_scene_to_file("res://Scenes/Level1.tscn")
+		get_tree().change_scene_to_file("res://Scenes/Level1_night.tscn")

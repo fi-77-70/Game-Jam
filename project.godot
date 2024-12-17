@@ -18,8 +18,6 @@ config/icon="res://icon.svg"
 [autoload]
 
 GlobalManager="*res://Scripts/GlobalManager.gd"
-[autoload]
-
 StartMenu="*res://Scenes/StartMenu.tscn"
 
 [dotnet]

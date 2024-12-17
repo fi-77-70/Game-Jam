@@ -1,21 +1,14 @@
-[gd_scene load_steps=66 format=3 uid="uid://dtw0ms64argxf"]
+[gd_scene load_steps=58 format=3 uid="uid://dtw0ms64argxf"]
 
 [ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="1_emxbg"]
 [ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="2_hajau"]
 [ext_resource type="Texture2D" uid="uid://dco1q7iaehq2y" path="res://assets/textures/floor.png" id="3_yrml5"]
 [ext_resource type="Texture2D" uid="uid://doi5emy16fqjq" path="res://assets/textures/main_wall.png" id="4_acbjt"]
-[ext_resource type="PackedScene" uid="uid://cyod6sjjdby82" path="res://assets/blood/blood_1.glb" id="4_axoqv"]
-[ext_resource type="PackedScene" uid="uid://sabtnm5tjlen" path="res://assets/blood/blood_2.glb" id="5_cxlnk"]
 [ext_resource type="Texture2D" uid="uid://chr7bdkqhh84x" path="res://assets/textures/wall.png" id="5_nvbrs"]
-[ext_resource type="PackedScene" uid="uid://ect088yu015m" path="res://assets/blood/blood7.glb" id="6_2pogg"]
 [ext_resource type="PackedScene" uid="uid://ci024jt67lks1" path="res://assets/Shield/A_massive_shield_shap_1214095252.glb" id="6_63keq"]
-[ext_resource type="PackedScene" uid="uid://mlnlr8t2102" path="res://assets/blood/blood6.glb" id="7_b8x8l"]
 [ext_resource type="PackedScene" uid="uid://bxmvhdmwkfwdm" path="res://assets/Light/_ChristmasAdventure__1214100511.glb" id="7_lkqeo"]
-[ext_resource type="PackedScene" uid="uid://c370tv52cyke8" path="res://assets/blood/blood5.glb" id="8_wrty7"]
 [ext_resource type="PackedScene" uid="uid://doqo5pbf3my8g" path="res://Scenes/Assets/tree.tscn" id="8_x60mi"]
 [ext_resource type="PackedScene" uid="uid://bc7djcn2ftvcd" path="res://Scenes/Assets/bed.tscn" id="9_vxc73"]
-[ext_resource type="PackedScene" uid="uid://cujnnobangyfd" path="res://assets/blood/blood4.glb" id="9_x6sei"]
-[ext_resource type="PackedScene" uid="uid://bo6fqab6odhtl" path="res://assets/blood/blood3.glb" id="10_j0wc6"]
 [ext_resource type="PackedScene" uid="uid://cuxkk2hac5pgl" path="res://Scenes/Assets/belt.tscn" id="10_lem8c"]
 [ext_resource type="PackedScene" uid="uid://cuh5e34n5asqi" path="res://Scenes/Assets/table.tscn" id="11_quunm"]
 [ext_resource type="PackedScene" uid="uid://cqlgi1w2hesl3" path="res://Scenes/Assets/chair.tscn" id="12_n8vko"]
@@ -23,7 +16,7 @@
 [ext_resource type="PackedScene" uid="uid://04qmy3v21nbx" path="res://assets/Tools/Hand_Drill/vintage_hand_drill_1k.gltf" id="14_ojlhk"]
 [ext_resource type="PackedScene" uid="uid://db7pl7cujbhgg" path="res://assets/Tools/screwdiver/flathead_screwdriver_1k.gltf" id="15_cab7m"]
 [ext_resource type="PackedScene" uid="uid://cp8u5xnaxnrec" path="res://Scenes/Assets/door.tscn" id="16_giafy"]
-[ext_resource type="PackedScene" uid="uid://cywyiw0jetmgd" path="res://assets/crates_toys/Toy_prototypes_1.glb" id="17_fe4kp"]
+[ext_resource type="PackedScene" uid="uid://4lxp850hsf5y" path="res://assets/crates_toys/Toy_prototypes_1.glb" id="17_fe4kp"]
 [ext_resource type="PackedScene" uid="uid://umhsll26co8b" path="res://Scenes/Assets/crates_and_barrels_2.tscn" id="18_sqi1c"]
 [ext_resource type="PackedScene" uid="uid://bc0q5hij14mpp" path="res://Scenes/Assets/crates_and_barrels_big.tscn" id="19_8vqn8"]
 [ext_resource type="PackedScene" uid="uid://cbljtlndfee4k" path="res://assets/broken_toys/Broken_toys.glb" id="20_jero7"]
@@ -45,7 +38,7 @@
 [ext_resource type="PackedScene" uid="uid://b6i2y2wg3vraf" path="res://Scenes/Assets/paint_station.tscn" id="36_w2et8"]
 [ext_resource type="PackedScene" uid="uid://dqviq4f5sfwpi" path="res://assets/candy_canes/Candy_canes.glb" id="37_w1dlo"]
 [ext_resource type="PackedScene" uid="uid://bkjtskgx438pp" path="res://assets/clocks/Clocks.glb" id="38_jmvtf"]
-[ext_resource type="PackedScene" uid="uid://3y3mj8e8pyjc" path="res://assets/desk/desk.glb" id="39_btpa6"]
+[ext_resource type="PackedScene" uid="uid://lnpuakwgujb2" path="res://assets/desk/desk.glb" id="39_btpa6"]
 [ext_resource type="PackedScene" uid="uid://chxgis6db8wwf" path="res://assets/walls_assets/Animated_Wall_Panel.glb" id="40_l5he3"]
 [ext_resource type="PackedScene" uid="uid://cral4doi0u88t" path="res://assets/walls_assets/_Only_elf_wall_sign.glb" id="41_dwwdw"]
 [ext_resource type="PackedScene" uid="uid://dn8115jrtobn7" path="res://assets/walls_assets/_Painting_zone.glb" id="42_lpaea"]
@@ -54,7 +47,6 @@
 [ext_resource type="PackedScene" uid="uid://bobht47xferue" path="res://assets/walls_assets/momma_texture.glb" id="45_syecc"]
 [ext_resource type="PackedScene" uid="uid://dfrwqafmaq23y" path="res://assets/walls_assets/Design_a_dark_festiv.glb" id="46_r08ln"]
 [ext_resource type="PackedScene" uid="uid://d31cyb28u5ib8" path="res://Scenes/controller.tscn" id="47_yhx8u"]
-[ext_resource type="PackedScene" uid="uid://dc3tfsvoxd8cf" path="res://assets/dead_elf/dead_elf_blooded_without_leg.glb" id="55_ofnf2"]
 [ext_resource type="PackedScene" uid="uid://bmnbwqc35tsks" path="res://Scenes/elf_boss.tscn" id="56_hi5al"]
 
 [sub_resource type="ProceduralSkyMaterial" id="ProceduralSkyMaterial_slnw4"]
@@ -133,45 +125,6 @@ shape = SubResource("BoxShape3D_4wvoe")
 [node name="MeshInstance3D" type="MeshInstance3D" parent="NavigationRegion3D/Wall_FC/Ceiling"]
 mesh = SubResource("BoxMesh_m7tth")
 surface_material_override/0 = SubResource("StandardMaterial3D_c31mf")
-
-[node name="blood_1" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("4_axoqv")]
-transform = Transform3D(0.00421271, 0, -0.00559045, 0, -0.106, 0, 0.00559045, 0, 0.00421271, 0.214738, -2.5, -0.0741194)
-
-[node name="blood_2" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("5_cxlnk")]
-transform = Transform3D(-0.00177371, 0, 0.0118682, 0, -0.182, 0, -0.0118682, 0, -0.00177371, 0.12032, -2.5, -0.0376821)
-
-[node name="blood7" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("6_2pogg")]
-transform = Transform3D(0.0285722, 0, 0.0171679, 0, 0.5, 0, -0.0171679, 0, 0.0285722, 0.0412509, -2.5, -0.462822)
-
-[node name="blood6" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("7_b8x8l")]
-transform = Transform3D(-0.0178843, 0, 0.00203766, 0, 0.273, 0, -0.00203766, 0, -0.0178843, -0.0692273, -1.97754, -0.466616)
-
-[node name="blood5" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("8_wrty7")]
-transform = Transform3D(-0.00228932, 0.0268292, -0.0332065, 0.0205221, 0.394005, 0, 0.0261671, -0.306659, -0.00290519, 0.224, -2.006, -0.197)
-
-[node name="blood4" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("9_x6sei")]
-transform = Transform3D(-0.027, 0, 0, 0, -0.409, 0, 0, 0, -0.027, 0.193258, -2.5, -0.186017)
-
-[node name="blood8" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("9_x6sei")]
-transform = Transform3D(-0.012, 0, 0, 0, -0.182, 0, 0, 0, -0.012, 0.00180701, -2.5, -0.253573)
-
-[node name="blood9" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("9_x6sei")]
-transform = Transform3D(0.00111088, -0.289886, 0.0107694, 0.00661334, -0.151238, -0.0184508, -0.020953, -0.0631036, -0.00525259, 0.215768, -2.5, -0.346797)
-
-[node name="blood10" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("9_x6sei")]
-transform = Transform3D(-0.0403981, -0.675351, 0.0395672, 0.0352499, -0.854792, -0.0275532, -0.0480567, -0.0592732, -0.053472, 0.009, -2.50553, -0.157)
-
-[node name="blood3" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("10_j0wc6")]
-transform = Transform3D(-0.0550746, -0.178214, 0.00880652, -0.00131386, -0.456136, -0.0483914, -0.0146308, 0.711812, -0.0288048, 0.180557, -2.5, -0.440182)
-
-[node name="blood_3" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("5_cxlnk")]
-transform = Transform3D(-0.0781832, 0.127109, -0.0567982, 0.00421498, 1.46301, 0.0084541, -0.0572593, -0.0658626, 0.0781761, 0.0735587, -2.5, -0.359307)
-
-[node name="blood_4" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("4_axoqv")]
-transform = Transform3D(0.0267886, 2.18971, 0, -0.14445, 0.405591, -0.00513023, 0.00504432, -0.0141636, -0.146911, -0.208359, -2.63944, -0.418678)
-
-[node name="blood11" parent="NavigationRegion3D/Wall_FC/Ceiling" instance=ExtResource("6_2pogg")]
-transform = Transform3D(-0.197, 0, 0, 0, 1.30479e-07, -0.197, 0, 2.985, 8.61114e-09, -0.244036, -2.51828, -0.372)
 
 [node name="MainWall" type="StaticBody3D" parent="NavigationRegion3D/Wall_FC"]
 transform = Transform3D(-4.37114e-08, 0, -30, 0, 4, 0, 1, 0, -1.31134e-06, 0, 3, -14.5)
@@ -647,42 +600,6 @@ transform = Transform3D(0.358368, 0, -0.93358, 0, 1, 0, 0.93358, 0, 0.358368, -1
 
 [node name="Player" parent="." groups=["player"] instance=ExtResource("47_yhx8u")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.08143, 0.928315, -10.8988)
-
-[node name="blood3" parent="." instance=ExtResource("10_j0wc6")]
-transform = Transform3D(-20.84, 0, 0, 0, -20.84, 0, 0, 0, -20.84, -13.5762, 0.39024, 0.909613)
-
-[node name="blood6" parent="." instance=ExtResource("7_b8x8l")]
-transform = Transform3D(0.47, 0, 0, 0, 0.47, 0, 0, 0, 0.47, -2.36109, 1.85215, -7.09351)
-
-[node name="blood7" parent="." instance=ExtResource("7_b8x8l")]
-transform = Transform3D(-0.140009, 0, -0.883981, 0, -0.895, 0, 0.883981, 0, -0.140009, -3.29993, 1.90003, -6.64619)
-
-[node name="dead_elf_blooded_without_leg" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(0.439428, 0, 0.136026, 0, -0.46, 0, -0.136026, 0, 0.439428, 6.45596, 1.00407, -10.9298)
-
-[node name="dead_elf_blooded_without_leg2" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(-0.434151, 0, 0.303995, 0, 0.53, 0, -0.303995, 0, -0.434151, 0.982095, 1, -8.30353)
-
-[node name="dead_elf_blooded_without_leg3" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(0.545, 0, 0, 0, 0.545, 0, 0, 0, 0.545, -5.67379, 0.984746, -12.2946)
-
-[node name="dead_elf_blooded_without_leg4" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(-0.223948, 0, -0.4302, 0, 0.485, 0, 0.4302, 0, -0.223948, -5.10754, 0.985575, -7.43462)
-
-[node name="dead_elf_blooded_without_leg5" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(-0.465681, 0, 0.242418, 0, 0.525, 0, -0.242418, 0, -0.465681, -9.95006, 1, -3.71907)
-
-[node name="dead_elf_blooded_without_leg6" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(0.232065, 0, -0.344051, 0, 0.415, 0, 0.344051, 0, 0.232065, -7.73974, 1, 1.21668)
-
-[node name="dead_elf_blooded_without_leg7" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(-0.5, 0, 0, 0, -0.5, 0, 0, 0, -0.5, -0.869563, 1, 6.726)
-
-[node name="dead_elf_blooded_without_leg8" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(-0.121434, 0, 0.469552, 0, -0.485, 0, -0.469552, 0, -0.121434, 4.60413, 1, 5.75681)
-
-[node name="dead_elf_blooded_without_leg9" parent="." instance=ExtResource("55_ofnf2")]
-transform = Transform3D(0.494337, 0, -0.241104, 0, 0.55, 0, 0.241104, 0, 0.494337, -1.61073, 1, 11.0057)
 
 [node name="ElfBoss" parent="." instance=ExtResource("56_hi5al")]
 transform = Transform3D(-0.75, 0, -0.000733071, 0, 0.75, 0, 0.000733071, 0, -0.75, 3.8913, 1.43767, -6.14948)
