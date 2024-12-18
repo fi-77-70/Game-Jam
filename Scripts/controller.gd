@@ -151,3 +151,16 @@ func _on_area_3d_body_entered(body: Node3D) -> void:
 	if body.is_in_group("enemys"):
 		get_tree().change_scene_to_file("res://Scenes/YouDied.tscn")
 	pass # Replace with function body.
+
+
+func _on_render_sphere_body_entered(body: Node3D) -> void:
+	if body.is_in_group("render"):
+		if body.has_method("set_visible"):
+			body.visible = true
+		else:
+			print("FUCKOFF!")
+
+
+func _on_render_sphere_body_exited(body: Node3D) -> void:
+	if body.is_in_group("render"):
+		body.visible = false

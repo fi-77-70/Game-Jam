@@ -6,7 +6,7 @@ extends CharacterBody3D
 
 var wanderTimer = 0.0
 
-var speed = 1.0
+var speed = 0.1
 
 var stuck_timer = 0.0 
 var stuck_threshold = 1.0 

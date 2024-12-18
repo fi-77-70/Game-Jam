@@ -4,27 +4,18 @@
 [ext_resource type="Script" path="res://Scenes/elf_boss.gd" id="1_p8ec1"]
 [ext_resource type="AudioStream" uid="uid://b2shsml4of6so" path="res://assets/sound/elf_boss_scream.wav" id="4_y5fp2"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_lpcnk"]
-size = Vector3(1.09009, 1.72504, 1)
-
 [sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_xreps"]
 points = PackedVector3Array(-0.000195742, 1, -0.000195742, 0.194988, -1, -0.980814, -0.000195742, -1, -1, -0.195184, -1, -0.980814, -0.382733, -1, -0.924041, -0.555599, -1, -0.831637, -0.707126, -1, -0.707126, -0.831637, -1, -0.555599, -0.924041, -1, -0.382733, -0.980814, -1, -0.195184, -1, -1, -0.000195742, -0.980814, -1, 0.194988, -0.924041, -1, 0.382537, -0.831637, -1, 0.555403, -0.707126, -1, 0.70693, -0.555599, -1, 0.831441, -0.382733, -1, 0.923845, -0.195184, -1, 0.980619, -0.000195742, -1, 1, 0.194988, -1, 0.980619, 0.382537, -1, 0.923845, 0.555403, -1, 0.831441, 0.70693, -1, 0.70693, 0.831441, -1, 0.555403, 0.923845, -1, 0.382537, 0.980619, -1, 0.194988, 1, -1, -0.000195742, 0.980619, -1, -0.195184, 0.923845, -1, -0.382733, 0.831441, -1, -0.555599, 0.70693, -1, -0.707126, 0.555403, -1, -0.831637, 0.382537, -1, -0.924041)
 
-[node name="ElfBoss" type="Node3D"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_lpcnk"]
+size = Vector3(1.09009, 1.72504, 1)
+
+[node name="ElfBoss" type="StaticBody3D"]
 transform = Transform3D(0.75, 0, 0, 0, 0.75, 0, 0, 0, 0.75, 0, 0, 0)
 script = ExtResource("1_p8ec1")
 
 [node name="Animation_Walking_withSkin" parent="." instance=ExtResource("1_jub81")]
 transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, -0.547387, 0)
-
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -0.00174268, -0.547386, 0.0169989)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.0032959, 0.85318, 0)
-shape = SubResource("BoxShape3D_lpcnk")
-
-[node name="NavigationAgent3D" type="NavigationAgent3D" parent="RigidBody3D"]
 
 [node name="SpotLight3D" type="SpotLight3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.725249, 0)
@@ -48,4 +39,8 @@ debug_shape_custom_color = Color(1, 0, 0, 1)
 [node name="Jumpscare" type="AudioStreamPlayer3D" parent="."]
 stream = ExtResource("4_y5fp2")
 
-[connection signal="timeout" from="VisionTimer" to="." method="_on_vision_timer_timeout"]
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0.00155322, 0.305794, 0.0169989)
+shape = SubResource("BoxShape3D_lpcnk")
+
+[node name="NavigationAgent3D" type="NavigationAgent3D" parent="."]

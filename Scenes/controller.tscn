@@ -1,9 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://d31cyb28u5ib8"]
+[gd_scene load_steps=8 format=3 uid="uid://d31cyb28u5ib8"]
 
 [ext_resource type="Script" path="res://Scripts/controller.gd" id="1_pd50x"]
 [ext_resource type="PackedScene" uid="uid://c6opajryh1as" path="res://assets/Lantern_01_1k.gltf/Lantern_01_1k.gltf" id="2_dkcx8"]
-[ext_resource type="AudioStream" uid="uid://dofm01gb2w2ab" path="res://assets/sound/chase.wav" id="3_0jlh2"]
-[ext_resource type="AudioStream" uid="uid://cu08p0a6hysgc" path="res://assets/sound/heyo.wav" id="4_yt1lc"]
+[ext_resource type="Script" path="res://Scripts/render.gd" id="3_bipsn"]
 
 [sub_resource type="CapsuleMesh" id="CapsuleMesh_qqkou"]
 radius = 0.1
@@ -16,6 +15,9 @@ height = 0.509783
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_5545u"]
 size = Vector3(1.09888, 0.147217, 1.46118)
+
+[sub_resource type="SphereShape3D" id="SphereShape3D_53o37"]
+radius = 3.02587
 
 [node name="Player" type="CharacterBody3D"]
 script = ExtResource("1_pd50x")
@@ -51,4 +53,16 @@ transform = Transform3D(1.3245, 0, 0, 0, 1.3245, 0, 0, 0, 1.3245, -0.0646932, 0.
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0223389, 0.534814, -0.358032)
 shape = SubResource("BoxShape3D_5545u")
 
+[node name="RenderSphere" type="Area3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0223389, 0.534814, -0.358032)
+script = ExtResource("3_bipsn")
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="RenderSphere"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0.319701)
+shape = SubResource("SphereShape3D_53o37")
+
 [connection signal="body_entered" from="Area3D" to="." method="_on_area_3d_body_entered"]
+[connection signal="body_entered" from="RenderSphere" to="." method="_on_render_sphere_body_entered"]
+[connection signal="body_entered" from="RenderSphere" to="RenderSphere" method="_on_body_entered"]
+[connection signal="body_exited" from="RenderSphere" to="." method="_on_render_sphere_body_exited"]
+[connection signal="body_exited" from="RenderSphere" to="RenderSphere" method="_on_body_exited"]

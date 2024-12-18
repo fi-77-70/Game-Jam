@@ -27,6 +27,7 @@ project/assembly_name="Christmas Terror"
 [global_group]
 
 player=""
+render=""
 
 [input]
 

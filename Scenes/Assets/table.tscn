@@ -5,14 +5,11 @@
 [sub_resource type="BoxShape3D" id="BoxShape3D_qqqv7"]
 size = Vector3(1.78697, 1.05469, 0.652466)
 
-[node name="Table" type="Node3D"]
+[node name="Table" type="StaticBody3D"]
 
 [node name="Texture" parent="." instance=ExtResource("1_hhc5g")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
 
-[node name="RigidBody3D" type="RigidBody3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55186, 1, -1.69908)
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="RigidBody3D"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.0060041, 0.0273445, 0.00555444)
+[node name="CollisionShape3D" type="CollisionShape3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.55786, 1.02734, -1.69353)
 shape = SubResource("BoxShape3D_qqqv7")
